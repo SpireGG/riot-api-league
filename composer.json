@@ -16,7 +16,7 @@
 		"test": "XDEBUG_MODE=coverage phpunit --configuration phpunit.xml --coverage-text --coverage-html build/coverage"
 	},
 	"require": {
-		"dolejska-daniel/riot-api-base": "^v2",
+		"dolejska-daniel/riot-api-base": "dev-master",
 		"php": ">=8.1",
 		"ext-json": "*"
 	},
@@ -28,5 +28,9 @@
 			"RiotAPI\\LeagueAPI\\": "src/LeagueAPI"
 		}
 	},
+	"repositories": [{
+		"type": "vcs",
+		"url": "https://github.com/chypriote/riot-api-base"
+	}],
 	"minimum-stability": "stable"
 }
