@@ -1,5 +1,5 @@
 {
-	"name": "dolejska-daniel/riot-api-league",
+	"name": "spiregg/riot-api-league",
 	"type": "library",
 	"description": "Riot League of Legends API wrapper for PHP8",
 	"keywords": ["riot", "league of legends", "api", "wrapper", "php8"],
