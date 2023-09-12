@@ -30,7 +30,7 @@
 	},
 	"repositories": [{
 		"type": "vcs",
-		"url": "https://github.com/chypriote/riot-api-base"
+		"url": "https://github.com/SpireGG/riot-api-base"
 	}],
 	"minimum-stability": "stable"
 }
