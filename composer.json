@@ -3,9 +3,15 @@
 	"type": "library",
 	"description": "Riot League of Legends API wrapper for PHP8",
 	"keywords": ["riot", "league of legends", "api", "wrapper", "php8"],
-	"homepage": "https://github.com/dolejska-daniel/riot-api-league",
+	"homepage": "https://github.com/spiregg/riot-api-league",
 	"license": "GPL-3.0-or-later",
+	"version": "2.1.0",
 	"authors": [
+		{
+			"name": "Chypriote",
+			"email": "chypriote@lolpros.gg",
+			"role": "Developer"
+		},
 		{
 			"name": "Daniel Dolejška",
 			"email": "dolejskad@gmail.com",
