@@ -26,56 +26,56 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   clash (v1)
  *     - @see LeagueAPI::getTournamentTeamById
- *       @link https://developer.riotgames.com/apis#clash-v1/GET_getTeamById
+ * @link https://developer.riotgames.com/apis#clash-v1/GET_getTeamById
  *     - @see LeagueAPI::getTournamentPlayersBySummoner
- *       @link https://developer.riotgames.com/apis#clash-v1/GET_getPlayersBySummoner
+ * @link https://developer.riotgames.com/apis#clash-v1/GET_getPlayersBySummoner
  *     - @see LeagueAPI::getTournamentPlayersByPUUID
- *       @link https://developer.riotgames.com/apis#clash-v1/GET_getPlayersByPUUID
+ * @link https://developer.riotgames.com/apis#clash-v1/GET_getPlayersByPUUID
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class PlayerDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTournamentTeamById
-	 *   - @see LeagueAPI::getTournamentPlayersBySummoner
-	 *   - @see LeagueAPI::getTournamentPlayersByPUUID
-	 *
-	 * @var string $summonerId
-	 */
-	public string $summonerId;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getTournamentTeamById
+     *   - @see LeagueAPI::getTournamentPlayersBySummoner
+     *   - @see LeagueAPI::getTournamentPlayersByPUUID
+     *
+     * @var string $summonerId
+     */
+    public string $summonerId;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTournamentPlayersBySummoner
-	 *   - @see LeagueAPI::getTournamentPlayersByPUUID
-	 *
-	 * @var string $teamId
-	 */
-	public string $teamId;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getTournamentPlayersBySummoner
+     *   - @see LeagueAPI::getTournamentPlayersByPUUID
+     *
+     * @var string $teamId
+     */
+    public string $teamId;
 
-	/**
-	 * (Legal values: UNSELECTED, FILL, TOP, JUNGLE, MIDDLE, BOTTOM, UTILITY).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTournamentTeamById
-	 *   - @see LeagueAPI::getTournamentPlayersBySummoner
-	 *   - @see LeagueAPI::getTournamentPlayersByPUUID
-	 *
-	 * @var string $position
-	 */
-	public string $position;
+    /**
+     * (Legal values: UNSELECTED, FILL, TOP, JUNGLE, MIDDLE, BOTTOM, UTILITY).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getTournamentTeamById
+     *   - @see LeagueAPI::getTournamentPlayersBySummoner
+     *   - @see LeagueAPI::getTournamentPlayersByPUUID
+     *
+     * @var string $position
+     */
+    public string $position;
 
-	/**
-	 * (Legal values: CAPTAIN, MEMBER).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTournamentTeamById
-	 *   - @see LeagueAPI::getTournamentPlayersBySummoner
-	 *   - @see LeagueAPI::getTournamentPlayersByPUUID
-	 *
-	 * @var string $role
-	 */
-	public string $role;
+    /**
+     * (Legal values: CAPTAIN, MEMBER).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getTournamentTeamById
+     *   - @see LeagueAPI::getTournamentPlayersBySummoner
+     *   - @see LeagueAPI::getTournamentPlayersByPUUID
+     *
+     * @var string $role
+     */
+    public string $role;
 }

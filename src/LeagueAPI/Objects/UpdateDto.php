@@ -26,67 +26,67 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   lol-status (v4)
  *     - @see LeagueAPI::getPlatformData
- *       @link https://developer.riotgames.com/apis#lol-status-v4/GET_getPlatformData
+ * @link https://developer.riotgames.com/apis#lol-status-v4/GET_getPlatformData
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class UpdateDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var int $id
-	 */
-	public int $id;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var int $id
+     */
+    public int $id;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string $author
-	 */
-	public string $author;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string $author
+     */
+    public string $author;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var bool $publish
-	 */
-	public bool $publish;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var bool $publish
+     */
+    public bool $publish;
 
-	/**
-	 * (Legal values: riotclient, riotstatus, game).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string[] $publish_locations
-	 */
-	public array $publish_locations;
+    /**
+     * (Legal values: riotclient, riotstatus, game).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string[] $publish_locations
+     */
+    public array $publish_locations;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var ContentDto[] $translations
-	 */
-	public array $translations;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var ContentDto[] $translations
+     */
+    public array $translations;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string $created_at
-	 */
-	public string $created_at;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string $created_at
+     */
+    public string $created_at;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string $updated_at
-	 */
-	public string $updated_at;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string $updated_at
+     */
+    public string $updated_at;
 }

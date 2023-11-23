@@ -23,13 +23,11 @@ use RiotAPI\Base\BaseAPI;
 use RiotAPI\Base\Exceptions\SettingsException;
 use RiotAPI\Base\Objects\IApiObject;
 use RiotAPI\Base\Objects\IApiObjectExtension;
-
+use RiotAPI\LeagueAPI\LeagueAPI;
 use RiotAPI\LeagueAPI\Objects\StaticData\StaticReforgedRuneDto;
 use RiotAPI\LeagueAPI\Objects\StaticData\StaticReforgedRunePathDto;
 use RiotAPI\LeagueAPI\Objects\StaticData\StaticReforgedRunePathList;
 use RiotAPI\LeagueAPI\Objects\StaticData\StaticReforgedRuneSlotDto;
-
-use RiotAPI\LeagueAPI\LeagueAPI;
 
 
 /**
@@ -39,40 +37,37 @@ use RiotAPI\LeagueAPI\LeagueAPI;
  */
 class StaticReforgedRunePathListExtension implements IApiObjectExtension
 {
-	protected StaticReforgedRunePathList $object;
-	protected array $rune_list = [];
+    protected StaticReforgedRunePathList $object;
+    protected array $rune_list = [];
 
-	/**
-	 *   StaticReforgedRunePathListExtension constructor.
-	 *
-	 * @param IApiObject $apiObject
-	 * @param LeagueAPI $api
-	 * @throws SettingsException
-	 */
-	public function __construct(IApiObject $apiObject, BaseAPI $api)
-	{
-		if (!$apiObject instanceof StaticReforgedRunePathList)
-			throw new SettingsException("Tried extending " . get_class($apiObject) . " with " . get_class($this));
+    /**
+     *   StaticReforgedRunePathListExtension constructor.
+     *
+     * @param IApiObject $apiObject
+     * @param LeagueAPI $api
+     * @throws SettingsException
+     */
+    public function __construct(IApiObject $apiObject, BaseAPI $api)
+    {
+        if (!$apiObject instanceof StaticReforgedRunePathList)
+            throw new SettingsException("Tried extending " . get_class($apiObject) . " with " . get_class($this));
 
-		$this->object = $apiObject;
+        $this->object = $apiObject;
 
-		/** @var StaticReforgedRunePathDto $path */
-		foreach ($this->object as $path)
-		{
-			/** @var StaticReforgedRuneSlotDto $slot */
-			foreach ($path as $slot)
-			{
-				/** @var StaticReforgedRuneDto $rune */
-				foreach ($slot as $rune)
-				{
-					$this->rune_list[$rune->id] = $rune;
-				}
-			}
-		}
-	}
+        /** @var StaticReforgedRunePathDto $path */
+        foreach ($this->object as $path) {
+            /** @var StaticReforgedRuneSlotDto $slot */
+            foreach ($path as $slot) {
+                /** @var StaticReforgedRuneDto $rune */
+                foreach ($slot as $rune) {
+                    $this->rune_list[$rune->id] = $rune;
+                }
+            }
+        }
+    }
 
-	public function getRuneById( int $rune_id )
-	{
-		return @$this->rune_list[$rune_id];
-	}
+    public function getRuneById(int $rune_id)
+    {
+        return @$this->rune_list[$rune_id];
+    }
 }

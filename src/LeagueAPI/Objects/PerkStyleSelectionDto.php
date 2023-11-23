@@ -26,41 +26,41 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getMatch
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class PerkStyleSelectionDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var int $perk
-	 */
-	public int $perk;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int $perk
+     */
+    public int $perk;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var int $var1
-	 */
-	public int $var1;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int $var1
+     */
+    public int $var1;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var int $var2
-	 */
-	public int $var2;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int $var2
+     */
+    public int $var2;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var int $var3
-	 */
-	public int $var3;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int $var3
+     */
+    public int $var3;
 }

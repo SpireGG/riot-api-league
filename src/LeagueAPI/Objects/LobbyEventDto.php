@@ -26,45 +26,45 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   tournament-stub (v4)
  *     - @see LeagueAPI::getLobbyEventsByCode
- *       @link https://developer.riotgames.com/apis#tournament-stub-v4/GET_getLobbyEventsByCode
+ * @link https://developer.riotgames.com/apis#tournament-stub-v4/GET_getLobbyEventsByCode
  *   tournament (v4)
  *     - @see LeagueAPI::getLobbyEventsByCode
- *       @link https://developer.riotgames.com/apis#tournament-v4/GET_getLobbyEventsByCode
+ * @link https://developer.riotgames.com/apis#tournament-v4/GET_getLobbyEventsByCode
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class LobbyEventDto extends ApiObject
 {
-	/**
-	 * The summonerId that triggered the event (Encrypted).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getLobbyEventsByCode
-	 *   - @see LeagueAPI::getLobbyEventsByCode
-	 *
-	 * @var string|null $summonerId
-	 */
-	public string|null $summonerId = null;
+    /**
+     * The summonerId that triggered the event (Encrypted).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getLobbyEventsByCode
+     *   - @see LeagueAPI::getLobbyEventsByCode
+     *
+     * @var string|null $summonerId
+     */
+    public string|null $summonerId = null;
 
-	/**
-	 * The type of event that was triggered.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getLobbyEventsByCode
-	 *   - @see LeagueAPI::getLobbyEventsByCode
-	 *
-	 * @var string $eventType
-	 */
-	public string $eventType;
+    /**
+     * The type of event that was triggered.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getLobbyEventsByCode
+     *   - @see LeagueAPI::getLobbyEventsByCode
+     *
+     * @var string $eventType
+     */
+    public string $eventType;
 
-	/**
-	 * Timestamp from the event.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getLobbyEventsByCode
-	 *   - @see LeagueAPI::getLobbyEventsByCode
-	 *
-	 * @var string $timestamp
-	 */
-	public string $timestamp;
+    /**
+     * Timestamp from the event.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getLobbyEventsByCode
+     *   - @see LeagueAPI::getLobbyEventsByCode
+     *
+     * @var string $timestamp
+     */
+    public string $timestamp;
 }

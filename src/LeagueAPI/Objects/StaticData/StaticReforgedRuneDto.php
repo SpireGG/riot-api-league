@@ -30,21 +30,21 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticReforgedRuneDto extends ApiObject
 {
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 
-	/** @var string $key */
-	public $key;
+    /** @var string $key */
+    public $key;
 
-	/** @var string $shortDesc */
-	public $shortDesc;
+    /** @var string $shortDesc */
+    public $shortDesc;
 
-	/** @var string $longDesc */
-	public $longDesc;
+    /** @var string $longDesc */
+    public $longDesc;
 
-	/** @var string $icon */
-	public $icon;
+    /** @var string $icon */
+    public $icon;
 }

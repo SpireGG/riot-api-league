@@ -26,25 +26,25 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getMatch
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class ObjectiveDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var bool $first
-	 */
-	public bool $first;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var bool $first
+     */
+    public bool $first;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var int $kills
-	 */
-	public int $kills;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int $kills
+     */
+    public int $kills;
 }

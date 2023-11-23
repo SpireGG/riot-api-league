@@ -26,25 +26,25 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getTimeline
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getTimeline
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getTimeline
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class MatchParticipantDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTimeline
-	 *
-	 * @var int $participantId
-	 */
-	public int $participantId;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getTimeline
+     *
+     * @var int $participantId
+     */
+    public int $participantId;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTimeline
-	 *
-	 * @var string $puuid
-	 */
-	public string $puuid;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getTimeline
+     *
+     * @var string $puuid
+     */
+    public string $puuid;
 }

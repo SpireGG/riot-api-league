@@ -30,12 +30,12 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticMetaDataDto extends ApiObject
 {
-	/** @var string $tier */
-	public $tier;
+    /** @var string $tier */
+    public $tier;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 
-	/** @var bool $isrune */
-	public $isrune;
+    /** @var bool $isrune */
+    public $isrune;
 }

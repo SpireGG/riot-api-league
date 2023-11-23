@@ -30,18 +30,18 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticSpellVarsDto extends ApiObject
 {
-	/** @var string $ranksWith */
-	public $ranksWith;
+    /** @var string $ranksWith */
+    public $ranksWith;
 
-	/** @var string $dyn */
-	public $dyn;
+    /** @var string $dyn */
+    public $dyn;
 
-	/** @var string $link */
-	public $link;
+    /** @var string $link */
+    public $link;
 
-	/** @var double[] $coeff */
-	public $coeff;
+    /** @var double[] $coeff */
+    public $coeff;
 
-	/** @var string $key */
-	public $key;
+    /** @var string $key */
+    public $key;
 }

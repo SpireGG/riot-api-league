@@ -26,10 +26,10 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   tournament-stub (v4)
  *     - @see LeagueAPI::getLobbyEventsByCode
- *       @link https://developer.riotgames.com/apis#tournament-stub-v4/GET_getLobbyEventsByCode
+ * @link https://developer.riotgames.com/apis#tournament-stub-v4/GET_getLobbyEventsByCode
  *   tournament (v4)
  *     - @see LeagueAPI::getLobbyEventsByCode
- *       @link https://developer.riotgames.com/apis#tournament-v4/GET_getLobbyEventsByCode
+ * @link https://developer.riotgames.com/apis#tournament-v4/GET_getLobbyEventsByCode
  *
  * @iterable $eventList
  *
@@ -37,12 +37,12 @@ namespace RiotAPI\LeagueAPI\Objects;
  */
 class LobbyEventDtoWrapper extends ApiObjectIterable
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getLobbyEventsByCode
-	 *   - @see LeagueAPI::getLobbyEventsByCode
-	 *
-	 * @var LobbyEventDto[] $eventList
-	 */
-	public array $eventList;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getLobbyEventsByCode
+     *   - @see LeagueAPI::getLobbyEventsByCode
+     *
+     * @var LobbyEventDto[] $eventList
+     */
+    public array $eventList;
 }

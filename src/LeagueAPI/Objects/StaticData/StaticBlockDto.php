@@ -30,12 +30,12 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticBlockDto extends ApiObject
 {
-	/** @var StaticBlockItemDto[] $items */
-	public $items;
+    /** @var StaticBlockItemDto[] $items */
+    public $items;
 
-	/** @var bool $recMath */
-	public $recMath;
+    /** @var bool $recMath */
+    public $recMath;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 }

@@ -30,24 +30,24 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticRecommendedDto extends ApiObject
 {
-	/** @var string $map */
-	public $map;
+    /** @var string $map */
+    public $map;
 
-	/** @var StaticBlockDto[] $blocks */
-	public $blocks;
+    /** @var StaticBlockDto[] $blocks */
+    public $blocks;
 
-	/** @var string $champion */
-	public $champion;
+    /** @var string $champion */
+    public $champion;
 
-	/** @var string $title */
-	public $title;
+    /** @var string $title */
+    public $title;
 
-	/** @var bool $priority */
-	public $priority;
+    /** @var bool $priority */
+    public $priority;
 
-	/** @var string $mode */
-	public $mode;
+    /** @var string $mode */
+    public $mode;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 }

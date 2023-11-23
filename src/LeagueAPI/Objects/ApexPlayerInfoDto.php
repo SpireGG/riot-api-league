@@ -26,33 +26,33 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   lol-challenges (v1)
  *     - @see LeagueAPI::getChallengeLeaderboards
- *       @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getChallengeLeaderboards
+ * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getChallengeLeaderboards
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class ApexPlayerInfoDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengeLeaderboards
-	 *
-	 * @var string $puuid
-	 */
-	public string $puuid;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengeLeaderboards
+     *
+     * @var string $puuid
+     */
+    public string $puuid;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengeLeaderboards
-	 *
-	 * @var int $value
-	 */
-	public int $value;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengeLeaderboards
+     *
+     * @var int $value
+     */
+    public int $value;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengeLeaderboards
-	 *
-	 * @var int $position
-	 */
-	public int $position;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengeLeaderboards
+     *
+     * @var int $position
+     */
+    public int $position;
 }

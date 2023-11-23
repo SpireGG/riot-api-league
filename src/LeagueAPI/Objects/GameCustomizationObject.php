@@ -26,29 +26,29 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   spectator (v4)
  *     - @see LeagueAPI::getCurrentGameInfoBySummoner
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class GameCustomizationObject extends ApiObject
 {
-	/**
-	 * Category identifier for Game Customization.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *
-	 * @var string $category
-	 */
-	public string $category;
+    /**
+     * Category identifier for Game Customization.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *
+     * @var string $category
+     */
+    public string $category;
 
-	/**
-	 * Game Customization content.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *
-	 * @var string $content
-	 */
-	public string $content;
+    /**
+     * Game Customization content.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *
+     * @var string $content
+     */
+    public string $content;
 }

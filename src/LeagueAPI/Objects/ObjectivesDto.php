@@ -26,57 +26,57 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getMatch
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class ObjectivesDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var ObjectiveDto $baron
-	 */
-	public ObjectiveDto $baron;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var ObjectiveDto $baron
+     */
+    public ObjectiveDto $baron;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var ObjectiveDto $champion
-	 */
-	public ObjectiveDto $champion;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var ObjectiveDto $champion
+     */
+    public ObjectiveDto $champion;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var ObjectiveDto $dragon
-	 */
-	public ObjectiveDto $dragon;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var ObjectiveDto $dragon
+     */
+    public ObjectiveDto $dragon;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var ObjectiveDto $inhibitor
-	 */
-	public ObjectiveDto $inhibitor;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var ObjectiveDto $inhibitor
+     */
+    public ObjectiveDto $inhibitor;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var ObjectiveDto $riftHerald
-	 */
-	public ObjectiveDto $riftHerald;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var ObjectiveDto $riftHerald
+     */
+    public ObjectiveDto $riftHerald;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var ObjectiveDto $tower
-	 */
-	public ObjectiveDto $tower;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var ObjectiveDto $tower
+     */
+    public ObjectiveDto $tower;
 }

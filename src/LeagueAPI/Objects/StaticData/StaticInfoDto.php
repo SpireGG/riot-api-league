@@ -30,15 +30,15 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticInfoDto extends ApiObject
 {
-	/** @var int $difficulty */
-	public $difficulty;
+    /** @var int $difficulty */
+    public $difficulty;
 
-	/** @var int $attack */
-	public $attack;
+    /** @var int $attack */
+    public $attack;
 
-	/** @var int $defense */
-	public $defense;
+    /** @var int $defense */
+    public $defense;
 
-	/** @var int $magic */
-	public $magic;
+    /** @var int $magic */
+    public $magic;
 }

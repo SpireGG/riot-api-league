@@ -25,41 +25,41 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getTimeline
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getTimeline
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getTimeline
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class MatchTimelineInfoDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTimeline
-	 *
-	 * @var int $frameInterval
-	 */
-	public int $frameInterval;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getTimeline
+     *
+     * @var int $frameInterval
+     */
+    public int $frameInterval;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTimeline
-	 *
-	 * @var MatchFrameDto[] $frames
-	 */
-	public array $frames;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getTimeline
+     *
+     * @var MatchFrameDto[] $frames
+     */
+    public array $frames;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTimeline
-	 *
-	 * @var int $gameId
-	 */
-	public int $gameId;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getTimeline
+     *
+     * @var int $gameId
+     */
+    public int $gameId;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getTimeline
-	 *
-	 * @var MatchParticipantDto[] $participants
-	 */
-	public array $participants;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getTimeline
+     *
+     * @var MatchParticipantDto[] $participants
+     */
+    public array $participants;
 }

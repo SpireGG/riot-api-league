@@ -32,6 +32,6 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticMasteryTreeListDto extends ApiObjectIterable
 {
-	/** @var StaticMasteryTreeItemDto[] $masteryTreeItems */
-	public $masteryTreeItems;
+    /** @var StaticMasteryTreeItemDto[] $masteryTreeItems */
+    public $masteryTreeItems;
 }

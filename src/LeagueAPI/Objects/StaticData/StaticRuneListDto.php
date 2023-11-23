@@ -32,12 +32,12 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticRuneListDto extends ApiObjectIterable
 {
-	/** @var StaticRuneDto[] $data */
-	public $data;
+    /** @var StaticRuneDto[] $data */
+    public $data;
 
-	/** @var string $version */
-	public $version;
+    /** @var string $version */
+    public $version;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 }

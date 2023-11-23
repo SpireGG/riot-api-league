@@ -32,6 +32,6 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticReforgedRunePathList extends ApiObjectIterable
 {
-	/** @var StaticReforgedRunePathDto[] $paths */
-	public $paths;
+    /** @var StaticReforgedRunePathDto[] $paths */
+    public $paths;
 }

@@ -30,9 +30,9 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticMasteryTreeItemDto extends ApiObject
 {
-	/** @var int $masteryId */
-	public $masteryId;
+    /** @var int $masteryId */
+    public $masteryId;
 
-	/** @var string $prereq */
-	public $prereq;
+    /** @var string $prereq */
+    public $prereq;
 }

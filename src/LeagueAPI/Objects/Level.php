@@ -26,7 +26,7 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   lol-challenges (v1)
  *     - @see LeagueAPI::getChallengePercentiles
- *       @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getChallengePercentiles
+ * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getChallengePercentiles
  *
  * @package RiotAPI\LeagueAPI\Objects
  */

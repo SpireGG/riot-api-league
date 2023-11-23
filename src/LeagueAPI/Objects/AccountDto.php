@@ -26,8 +26,8 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   account (v1)
  *     - @see LeagueAPI::getAccountByPUUID()
- *       @link https://developer.riotgames.com/apis#account-v1/GET_getByPuuid
- *       @link https://developer.riotgames.com/apis#account-v1/GET_getByRiotId
+ * @link https://developer.riotgames.com/apis#account-v1/GET_getByPuuid
+ * @link https://developer.riotgames.com/apis#account-v1/GET_getByRiotId
  *
  * @package RiotAPI\LeagueAPI\Objects
  */

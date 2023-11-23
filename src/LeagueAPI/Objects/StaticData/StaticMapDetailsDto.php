@@ -30,15 +30,15 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticMapDetailsDto extends ApiObject
 {
-	/** @var int $MapId */
-	public $MapId;
+    /** @var int $MapId */
+    public $MapId;
 
-	/** @var string $MapName */
-	public $MapName;
+    /** @var string $MapName */
+    public $MapName;
 
-	/** @var StaticImageDto $image */
-	public $image;
+    /** @var StaticImageDto $image */
+    public $image;
 
-	/** @var int[] $unpurchasableItemList */
-	public $unpurchasableItemList;
+    /** @var int[] $unpurchasableItemList */
+    public $unpurchasableItemList;
 }

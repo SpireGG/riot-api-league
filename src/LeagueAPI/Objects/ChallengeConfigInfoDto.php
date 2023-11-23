@@ -26,83 +26,83 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   lol-challenges (v1)
  *     - @see LeagueAPI::getAllChallengeConfigs
- *       @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getAllChallengeConfigs
+ * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getAllChallengeConfigs
  *     - @see LeagueAPI::getChallengeConfigs
- *       @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getChallengeConfigs
+ * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getChallengeConfigs
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class ChallengeConfigInfoDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getAllChallengeConfigs
-	 *   - @see LeagueAPI::getChallengeConfigs
-	 *
-	 * @var int $id
-	 */
-	public int $id;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getAllChallengeConfigs
+     *   - @see LeagueAPI::getChallengeConfigs
+     *
+     * @var int $id
+     */
+    public int $id;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getAllChallengeConfigs
-	 *   - @see LeagueAPI::getChallengeConfigs
-	 *
-	 * @var string[] $localizedNames
-	 */
-	public array $localizedNames;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getAllChallengeConfigs
+     *   - @see LeagueAPI::getChallengeConfigs
+     *
+     * @var string[] $localizedNames
+     */
+    public array $localizedNames;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getAllChallengeConfigs
-	 *   - @see LeagueAPI::getChallengeConfigs
-	 *
-	 * @var string $state
-	 */
-	public string $state;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getAllChallengeConfigs
+     *   - @see LeagueAPI::getChallengeConfigs
+     *
+     * @var string $state
+     */
+    public string $state;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getAllChallengeConfigs
-	 *   - @see LeagueAPI::getChallengeConfigs
-	 *
-	 * @var string|null $tracking
-	 */
-	public ?string $tracking = null;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getAllChallengeConfigs
+     *   - @see LeagueAPI::getChallengeConfigs
+     *
+     * @var string|null $tracking
+     */
+    public ?string $tracking = null;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getAllChallengeConfigs
-	 *   - @see LeagueAPI::getChallengeConfigs
-	 *
-	 * @var int|null $startTimestamp
-	 */
-	public ?int $startTimestamp = null;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getAllChallengeConfigs
+     *   - @see LeagueAPI::getChallengeConfigs
+     *
+     * @var int|null $startTimestamp
+     */
+    public ?int $startTimestamp = null;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getAllChallengeConfigs
-	 *   - @see LeagueAPI::getChallengeConfigs
-	 *
-	 * @var int|null $endTimestamp
-	 */
-	public ?int $endTimestamp = null;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getAllChallengeConfigs
+     *   - @see LeagueAPI::getChallengeConfigs
+     *
+     * @var int|null $endTimestamp
+     */
+    public ?int $endTimestamp = null;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getAllChallengeConfigs
-	 *   - @see LeagueAPI::getChallengeConfigs
-	 *
-	 * @var bool $leaderboard
-	 */
-	public bool $leaderboard;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getAllChallengeConfigs
+     *   - @see LeagueAPI::getChallengeConfigs
+     *
+     * @var bool $leaderboard
+     */
+    public bool $leaderboard;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getAllChallengeConfigs
-	 *   - @see LeagueAPI::getChallengeConfigs
-	 *
-	 * @var double[] $thresholds
-	 */
-	public array $thresholds;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getAllChallengeConfigs
+     *   - @see LeagueAPI::getChallengeConfigs
+     *
+     * @var double[] $thresholds
+     */
+    public array $thresholds;
 }

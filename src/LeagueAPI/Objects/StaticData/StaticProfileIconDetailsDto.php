@@ -30,9 +30,9 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticProfileIconDetailsDto extends ApiObject
 {
-	/** @var StaticImageDto $image */
-	public $image;
+    /** @var StaticImageDto $image */
+    public $image;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 }

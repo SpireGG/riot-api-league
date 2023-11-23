@@ -30,69 +30,69 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticItemDto extends ApiObject
 {
-	/** @var StaticGoldDto $gold */
-	public $gold;
+    /** @var StaticGoldDto $gold */
+    public $gold;
 
-	/** @var string $plaintext */
-	public $plaintext;
+    /** @var string $plaintext */
+    public $plaintext;
 
-	/** @var bool $hideFromAll */
-	public $hideFromAll;
+    /** @var bool $hideFromAll */
+    public $hideFromAll;
 
-	/** @var bool $inStore */
-	public $inStore;
+    /** @var bool $inStore */
+    public $inStore;
 
-	/** @var string[] $into */
-	public $into;
+    /** @var string[] $into */
+    public $into;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 
-	/** @var StaticInventoryDataStatsDto $stats */
-	public $stats;
+    /** @var StaticInventoryDataStatsDto $stats */
+    public $stats;
 
-	/** @var string $colloq */
-	public $colloq;
+    /** @var string $colloq */
+    public $colloq;
 
-	/** @var bool[] $maps */
-	public $maps;
+    /** @var bool[] $maps */
+    public $maps;
 
-	/** @var int $specialRecipe */
-	public $specialRecipe;
+    /** @var int $specialRecipe */
+    public $specialRecipe;
 
-	/** @var StaticImageDto $image */
-	public $image;
+    /** @var StaticImageDto $image */
+    public $image;
 
-	/** @var string $description */
-	public $description;
+    /** @var string $description */
+    public $description;
 
-	/** @var string[] $tags */
-	public $tags;
+    /** @var string[] $tags */
+    public $tags;
 
-	/** @var string[] $effect */
-	public $effect;
+    /** @var string[] $effect */
+    public $effect;
 
-	/** @var string $requiredChampion */
-	public $requiredChampion;
+    /** @var string $requiredChampion */
+    public $requiredChampion;
 
-	/** @var string[] $from */
-	public $from;
+    /** @var string[] $from */
+    public $from;
 
-	/** @var string $group */
-	public $group;
+    /** @var string $group */
+    public $group;
 
-	/** @var bool $consumeOnFull */
-	public $consumeOnFull;
+    /** @var bool $consumeOnFull */
+    public $consumeOnFull;
 
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 
-	/** @var bool $consumed */
-	public $consumed;
+    /** @var bool $consumed */
+    public $consumed;
 
-	/** @var int $depth */
-	public $depth;
+    /** @var int $depth */
+    public $depth;
 
-	/** @var int $stacks */
-	public $stacks;
+    /** @var int $stacks */
+    public $stacks;
 }

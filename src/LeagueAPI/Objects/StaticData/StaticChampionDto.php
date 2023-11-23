@@ -30,54 +30,54 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticChampionDto extends ApiObject
 {
-	/** @var StaticInfoDto $info */
-	public $info;
+    /** @var StaticInfoDto $info */
+    public $info;
 
-	/** @var string[] $enemytips */
-	public $enemytips;
+    /** @var string[] $enemytips */
+    public $enemytips;
 
-	/** @var StaticStatsDto $stats */
-	public $stats;
+    /** @var StaticStatsDto $stats */
+    public $stats;
 
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 
-	/** @var string $title */
-	public $title;
+    /** @var string $title */
+    public $title;
 
-	/** @var StaticImageDto $image */
-	public $image;
+    /** @var StaticImageDto $image */
+    public $image;
 
-	/** @var string[] $tags */
-	public $tags;
+    /** @var string[] $tags */
+    public $tags;
 
-	/** @var string $partype */
-	public $partype;
+    /** @var string $partype */
+    public $partype;
 
-	/** @var StaticSkinDto[] $skins */
-	public $skins;
+    /** @var StaticSkinDto[] $skins */
+    public $skins;
 
-	/** @var StaticPassiveDto $passive */
-	public $passive;
+    /** @var StaticPassiveDto $passive */
+    public $passive;
 
-	/** @var StaticRecommendedDto[] $recommended */
-	public $recommended;
+    /** @var StaticRecommendedDto[] $recommended */
+    public $recommended;
 
-	/** @var string[] $allytips */
-	public $allytips;
+    /** @var string[] $allytips */
+    public $allytips;
 
-	/** @var string $key */
-	public $key;
+    /** @var string $key */
+    public $key;
 
-	/** @var string $lore */
-	public $lore;
+    /** @var string $lore */
+    public $lore;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 
-	/** @var string $blurb */
-	public $blurb;
+    /** @var string $blurb */
+    public $blurb;
 
-	/** @var StaticChampionSpellDto[] $spells */
-	public $spells;
+    /** @var StaticChampionSpellDto[] $spells */
+    public $spells;
 }

@@ -26,78 +26,78 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   league-exp (v4)
  *     - @see LeagueAPI::getLeagueEntries
- *       @link https://developer.riotgames.com/apis#league-exp-v4/GET_getLeagueEntries
+ * @link https://developer.riotgames.com/apis#league-exp-v4/GET_getLeagueEntries
  *   league (v4)
  *     - @see LeagueAPI::getChallengerLeague
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getChallengerLeague
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getChallengerLeague
  *     - @see LeagueAPI::getMasterLeague
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getMasterLeague
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getMasterLeague
  *     - @see LeagueAPI::getLeagueEntries
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueEntries
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueEntries
  *     - @see LeagueAPI::getGrandmasterLeague
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getGrandmasterLeague
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getGrandmasterLeague
  *     - @see LeagueAPI::getLeagueById
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueById
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueById
  *     - @see LeagueAPI::getLeagueEntriesForSummoner
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueEntriesForSummoner
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueEntriesForSummoner
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class MiniSeriesDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getLeagueEntries
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getMasterLeague
-	 *   - @see LeagueAPI::getLeagueEntries
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getLeagueEntriesForSummoner
-	 *
-	 * @var int $losses
-	 */
-	public int $losses;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getMasterLeague
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getLeagueEntriesForSummoner
+     *
+     * @var int $losses
+     */
+    public int $losses;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getLeagueEntries
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getMasterLeague
-	 *   - @see LeagueAPI::getLeagueEntries
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getLeagueEntriesForSummoner
-	 *
-	 * @var string $progress
-	 */
-	public string $progress;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getMasterLeague
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getLeagueEntriesForSummoner
+     *
+     * @var string $progress
+     */
+    public string $progress;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getLeagueEntries
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getMasterLeague
-	 *   - @see LeagueAPI::getLeagueEntries
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getLeagueEntriesForSummoner
-	 *
-	 * @var int $target
-	 */
-	public int $target;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getMasterLeague
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getLeagueEntriesForSummoner
+     *
+     * @var int $target
+     */
+    public int $target;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getLeagueEntries
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getMasterLeague
-	 *   - @see LeagueAPI::getLeagueEntries
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getLeagueEntriesForSummoner
-	 *
-	 * @var int $wins
-	 */
-	public int $wins;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getMasterLeague
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getLeagueEntriesForSummoner
+     *
+     * @var int $wins
+     */
+    public int $wins;
 }

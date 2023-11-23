@@ -32,6 +32,6 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticReforgedRuneList extends ApiObjectIterable
 {
-	/** @var StaticReforgedRuneDto[] $runes */
-	public $runes;
+    /** @var StaticReforgedRuneDto[] $runes */
+    public $runes;
 }
