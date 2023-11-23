@@ -195,7 +195,7 @@ class LeagueAPI extends BaseAPI
 			parent::_setupCacheCalls();
 		}
 	}
-	
+
 	/**
 	 * @internal
 	 *
@@ -1089,6 +1089,79 @@ class LeagueAPI extends BaseAPI
 
 		return $result;
 	}
+
+
+    /**
+     * ==================================================================dd=
+     *     Account Endpoint Methods
+     *     @link https://developer.riotgames.com/apis#account-v1
+     * ==================================================================dd=
+     **/
+    const RESOURCE_ACCOUNT = '1514:account';
+    const RESOURCE_ACCOUNT_VERSION = 'v1';
+
+    /**
+     *   Retrieve account by PUUID.
+     *
+     * @cli-name get
+     * @cli-namespace account
+     *
+     * @param string $puuid
+     *
+     * @return Objects\AccountDto|null
+     *
+     * @throws SettingsException
+     * @throws RequestException
+     * @throws ServerException
+     * @throws ServerLimitException
+     * @throws GeneralException
+     *
+     * @link https://developer.riotgames.com/apis#account-v1/GET_getByPuuid
+     */
+    public function getAccountByPUUID( string $puuid ): ?Objects\AccountDto
+    {
+        $continent_region = $this->platforms->getCorrespondingContinentRegion($this->getSetting(self::SET_REGION));
+
+        $resultPromise = $this->setEndpoint("/riot/" . self::RESOURCE_ACCOUNT_VERSION . "/accounts/by-puuid/$puuid")
+            ->setResource(self::RESOURCE_ACCOUNT, "/account/%s")
+            ->makeCall($continent_region);
+
+        return $this->resolveOrEnqueuePromise($resultPromise, function(array $result) {
+            return new Objects\AccountDto($result, $this);
+        });
+    }
+
+    /**
+     *   Retrieve account by Riot ID.
+     *
+     * @cli-name get
+     * @cli-namespace account
+     *
+     * @param string $gameName
+     * @param string $tagLine
+     *
+     * @return Objects\AccountDto|null
+     *
+     * @throws SettingsException
+     * @throws RequestException
+     * @throws ServerException
+     * @throws ServerLimitException
+     * @throws GeneralException
+     *
+     * @link https://developer.riotgames.com/apis#account-v1/GET_getByRiotId
+     */
+    public function getAccountByRiotID( string $gameName, string $tagLine ): ?Objects\AccountDto
+    {
+        $continent_region = $this->platforms->getCorrespondingContinentRegion($this->getSetting(self::SET_REGION));
+
+        $resultPromise = $this->setEndpoint("/riot/" . self::RESOURCE_ACCOUNT_VERSION . "/accounts/by-riot-id/$gameName/$tagLine")
+            ->setResource(self::RESOURCE_ACCOUNT, "/account/%s")
+            ->makeCall($continent_region);
+
+        return $this->resolveOrEnqueuePromise($resultPromise, function(array $result) {
+            return new Objects\AccountDto($result, $this);
+        });
+    }
 
 	/**
 	 *   Retrieves champion list.
