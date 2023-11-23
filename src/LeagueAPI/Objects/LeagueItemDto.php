@@ -26,142 +26,142 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   league (v4)
  *     - @see LeagueAPI::getChallengerLeague
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getChallengerLeague
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getChallengerLeague
  *     - @see LeagueAPI::getGrandmasterLeague
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getGrandmasterLeague
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getGrandmasterLeague
  *     - @see LeagueAPI::getLeagueById
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueById
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueById
  *     - @see LeagueAPI::getMasterLeague
- *       @link https://developer.riotgames.com/apis#league-v4/GET_getMasterLeague
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getMasterLeague
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class LeagueItemDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var bool $freshBlood
-	 */
-	public bool $freshBlood;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var bool $freshBlood
+     */
+    public bool $freshBlood;
 
-	/**
-	 * Winning team on Summoners Rift.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var int $wins
-	 */
-	public int $wins;
+    /**
+     * Winning team on Summoners Rift.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var int $wins
+     */
+    public int $wins;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var string $summonerName
-	 */
-	public string $summonerName;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var string $summonerName
+     */
+    public string $summonerName;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var MiniSeriesDto|null $miniSeries
-	 */
-	public ?MiniSeriesDto $miniSeries = null;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var MiniSeriesDto|null $miniSeries
+     */
+    public ?MiniSeriesDto $miniSeries = null;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var bool $inactive
-	 */
-	public bool $inactive;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var bool $inactive
+     */
+    public bool $inactive;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var bool $veteran
-	 */
-	public bool $veteran;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var bool $veteran
+     */
+    public bool $veteran;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var bool $hotStreak
-	 */
-	public bool $hotStreak;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var bool $hotStreak
+     */
+    public bool $hotStreak;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var string $rank
-	 */
-	public string $rank;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var string $rank
+     */
+    public string $rank;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var int $leaguePoints
-	 */
-	public int $leaguePoints;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var int $leaguePoints
+     */
+    public int $leaguePoints;
 
-	/**
-	 * Losing team on Summoners Rift.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var int $losses
-	 */
-	public int $losses;
+    /**
+     * Losing team on Summoners Rift.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var int $losses
+     */
+    public int $losses;
 
-	/**
-	 * Player's encrypted summonerId.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChallengerLeague
-	 *   - @see LeagueAPI::getGrandmasterLeague
-	 *   - @see LeagueAPI::getLeagueById
-	 *   - @see LeagueAPI::getMasterLeague
-	 *
-	 * @var string $summonerId
-	 */
-	public string $summonerId;
+    /**
+     * Player's encrypted summonerId.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getChallengerLeague
+     *   - @see LeagueAPI::getGrandmasterLeague
+     *   - @see LeagueAPI::getLeagueById
+     *   - @see LeagueAPI::getMasterLeague
+     *
+     * @var string $summonerId
+     */
+    public string $summonerId;
 }

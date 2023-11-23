@@ -26,25 +26,25 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   lol-status (v4)
  *     - @see LeagueAPI::getPlatformData
- *       @link https://developer.riotgames.com/apis#lol-status-v4/GET_getPlatformData
+ * @link https://developer.riotgames.com/apis#lol-status-v4/GET_getPlatformData
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class ContentDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string $locale
-	 */
-	public string $locale;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string $locale
+     */
+    public string $locale;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string $content
-	 */
-	public string $content;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string $content
+     */
+    public string $content;
 }

@@ -30,15 +30,15 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticGoldDto extends ApiObject
 {
-	/** @var int $sell */
-	public $sell;
+    /** @var int $sell */
+    public $sell;
 
-	/** @var int $total */
-	public $total;
+    /** @var int $total */
+    public $total;
 
-	/** @var int $base */
-	public $base;
+    /** @var int $base */
+    public $base;
 
-	/** @var bool $purchasable */
-	public $purchasable;
+    /** @var bool $purchasable */
+    public $purchasable;
 }

@@ -30,65 +30,65 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticStatsDto extends ApiObject
 {
-	/** @var double $armorperlevel */
-	public $armorperlevel;
+    /** @var double $armorperlevel */
+    public $armorperlevel;
 
-	/** @var double $hpperlevel */
-	public $hpperlevel;
+    /** @var double $hpperlevel */
+    public $hpperlevel;
 
-	/** @var double $attackdamage */
-	public $attackdamage;
+    /** @var double $attackdamage */
+    public $attackdamage;
 
-	/** @var double $mpperlevel */
-	public $mpperlevel;
+    /** @var double $mpperlevel */
+    public $mpperlevel;
 
-	/** @var double $attackspeedoffset */
-	public $attackspeedoffset;
+    /** @var double $attackspeedoffset */
+    public $attackspeedoffset;
 
-	/** @var double $armor */
-	public $armor;
+    /** @var double $armor */
+    public $armor;
 
-	/** @var double $hp */
-	public $hp;
+    /** @var double $hp */
+    public $hp;
 
-	/** @var double $hpregenperlevel */
-	public $hpregenperlevel;
+    /** @var double $hpregenperlevel */
+    public $hpregenperlevel;
 
-	/** @var double $spellblock */
-	public $spellblock;
+    /** @var double $spellblock */
+    public $spellblock;
 
-	/** @var double $attackrange */
-	public $attackrange;
+    /** @var double $attackrange */
+    public $attackrange;
 
-	/** @var double $movespeed */
-	public $movespeed;
+    /** @var double $movespeed */
+    public $movespeed;
 
-	/** @var double $attackdamageperlevel */
-	public $attackdamageperlevel;
+    /** @var double $attackdamageperlevel */
+    public $attackdamageperlevel;
 
-	/** @var double $mpregenperlevel */
-	public $mpregenperlevel;
+    /** @var double $mpregenperlevel */
+    public $mpregenperlevel;
 
-	/** @var double $mp */
-	public $mp;
+    /** @var double $mp */
+    public $mp;
 
-	/** @var double $spellblockperlevel */
-	public $spellblockperlevel;
+    /** @var double $spellblockperlevel */
+    public $spellblockperlevel;
 
-	/** @var double $crit */
-	public $crit;
+    /** @var double $crit */
+    public $crit;
 
-	/** @var double $mpregen */
-	public $mpregen;
+    /** @var double $mpregen */
+    public $mpregen;
 
-	/** @var double $attackspeedperlevel */
-	public $attackspeedperlevel;
+    /** @var double $attackspeedperlevel */
+    public $attackspeedperlevel;
 
-	/** @var double $hpregen */
-	public $hpregen;
+    /** @var double $hpregen */
+    public $hpregen;
 
-	/** @var double $critperlevel */
-	public $critperlevel;
+    /** @var double $critperlevel */
+    public $critperlevel;
 
 	/** @var double $attackspeed */
 	public $attackspeed;

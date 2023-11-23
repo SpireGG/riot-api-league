@@ -27,4 +27,6 @@ use RiotAPI\Base\Objects\ApiObjectIterable as ApiObjectIterableBase;
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
-abstract class ApiObjectIterable extends ApiObjectIterableBase {}
+abstract class ApiObjectIterable extends ApiObjectIterableBase
+{
+}

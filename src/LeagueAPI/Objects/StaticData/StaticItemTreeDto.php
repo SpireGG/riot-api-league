@@ -30,9 +30,9 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticItemTreeDto extends ApiObject
 {
-	/** @var string $header */
-	public $header;
+    /** @var string $header */
+    public $header;
 
-	/** @var string[] $tags */
-	public $tags;
+    /** @var string[] $tags */
+    public $tags;
 }

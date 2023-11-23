@@ -30,8 +30,8 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticGroupDto extends ApiObject
 {
-	/** @var string $MaxGroupOwnable */
-	public $MaxGroupOwnable;
+    /** @var string $MaxGroupOwnable */
+    public $MaxGroupOwnable;
 
 	/** @var string $key */
 	public $key;

@@ -30,12 +30,12 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticSkinDto extends ApiObject
 {
-	/** @var int $num */
-	public $num;
+    /** @var int $num */
+    public $num;
 
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 }

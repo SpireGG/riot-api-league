@@ -32,18 +32,18 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticReforgedRunePathDto extends ApiObjectIterable
 {
-	/** @var StaticReforgedRuneSlotDto[] $slots */
-	public $slots;
+    /** @var StaticReforgedRuneSlotDto[] $slots */
+    public $slots;
 
-	/** @var string $icon */
-	public $icon;
+    /** @var string $icon */
+    public $icon;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 
-	/** @var string $key */
-	public $key;
+    /** @var string $key */
+    public $key;
 
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 }

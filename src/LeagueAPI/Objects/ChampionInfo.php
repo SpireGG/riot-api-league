@@ -26,33 +26,33 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   champion (v3)
  *     - @see LeagueAPI::getChampionInfo
- *       @link https://developer.riotgames.com/apis#champion-v3/GET_getChampionInfo
+ * @link https://developer.riotgames.com/apis#champion-v3/GET_getChampionInfo
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class ChampionInfo extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChampionInfo
-	 *
-	 * @var int $maxNewPlayerLevel
-	 */
-	public int $maxNewPlayerLevel;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChampionInfo
+     *
+     * @var int $maxNewPlayerLevel
+     */
+    public int $maxNewPlayerLevel;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChampionInfo
-	 *
-	 * @var int[] $freeChampionIdsForNewPlayers
-	 */
-	public array $freeChampionIdsForNewPlayers;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChampionInfo
+     *
+     * @var int[] $freeChampionIdsForNewPlayers
+     */
+    public array $freeChampionIdsForNewPlayers;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getChampionInfo
-	 *
-	 * @var int[] $freeChampionIds
-	 */
-	public array $freeChampionIds;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getChampionInfo
+     *
+     * @var int[] $freeChampionIds
+     */
+    public array $freeChampionIds;
 }

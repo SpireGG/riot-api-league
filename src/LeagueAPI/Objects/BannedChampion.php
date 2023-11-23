@@ -26,9 +26,9 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   spectator (v4)
  *     - @see LeagueAPI::getCurrentGameInfoBySummoner
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
  *     - @see LeagueAPI::getFeaturedGames
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
  *
  * @linkable getStaticChampion($championId)
  *
@@ -36,36 +36,36 @@ namespace RiotAPI\LeagueAPI\Objects;
  */
 class BannedChampion extends ApiObjectLinkable
 {
-	/**
-	 * The turn during which the champion was banned.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $pickTurn
-	 */
-	public int $pickTurn;
+    /**
+     * The turn during which the champion was banned.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $pickTurn
+     */
+    public int $pickTurn;
 
-	/**
-	 * The ID of the banned champion.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $championId
-	 */
-	public int $championId;
+    /**
+     * The ID of the banned champion.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $championId
+     */
+    public int $championId;
 
-	/**
-	 * The ID of the team that banned the champion.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $teamId
-	 */
-	public int $teamId;
+    /**
+     * The ID of the team that banned the champion.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $teamId
+     */
+    public int $teamId;
 }

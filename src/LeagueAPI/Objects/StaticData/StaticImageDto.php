@@ -30,24 +30,24 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticImageDto extends ApiObject
 {
-	/** @var string $full */
-	public $full;
+    /** @var string $full */
+    public $full;
 
-	/** @var string $group */
-	public $group;
+    /** @var string $group */
+    public $group;
 
-	/** @var string $sprite */
-	public $sprite;
+    /** @var string $sprite */
+    public $sprite;
 
-	/** @var int $h */
-	public $h;
+    /** @var int $h */
+    public $h;
 
-	/** @var int $w */
-	public $w;
+    /** @var int $w */
+    public $w;
 
-	/** @var int $y */
-	public $y;
+    /** @var int $y */
+    public $y;
 
-	/** @var int $x */
-	public $x;
+    /** @var int $x */
+    public $x;
 }

@@ -32,12 +32,12 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticLanguageStringsDto extends ApiObjectIterable
 {
-	/** @var string[] $data */
-	public $data;
+    /** @var string[] $data */
+    public $data;
 
-	/** @var string $version */
-	public $version;
+    /** @var string $version */
+    public $version;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 }

@@ -26,7 +26,7 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   spectator (v4)
  *     - @see LeagueAPI::getFeaturedGames
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
  *
  * @linkable getStaticChampion($championId)
  *
@@ -34,73 +34,73 @@ namespace RiotAPI\LeagueAPI\Objects;
  */
 class Participant extends ApiObjectLinkable
 {
-	/**
-	 * Flag indicating whether or not this participant is a bot.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var bool $bot
-	 */
-	public bool $bot;
+    /**
+     * Flag indicating whether or not this participant is a bot.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var bool $bot
+     */
+    public bool $bot;
 
-	/**
-	 * The ID of the second summoner spell used by this participant.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $spell2Id
-	 */
-	public int $spell2Id;
+    /**
+     * The ID of the second summoner spell used by this participant.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $spell2Id
+     */
+    public int $spell2Id;
 
-	/**
-	 * The ID of the profile icon used by this participant.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $profileIconId
-	 */
-	public int $profileIconId;
+    /**
+     * The ID of the profile icon used by this participant.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $profileIconId
+     */
+    public int $profileIconId;
 
-	/**
-	 * The summoner name of this participant.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var string $summonerName
-	 */
-	public string $summonerName;
+    /**
+     * The summoner name of this participant.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var string $summonerName
+     */
+    public string $summonerName;
 
-	/**
-	 * The ID of the champion played by this participant.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $championId
-	 */
-	public int $championId;
+    /**
+     * The ID of the champion played by this participant.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $championId
+     */
+    public int $championId;
 
-	/**
-	 * The team ID of this participant, indicating the participant's team.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $teamId
-	 */
-	public int $teamId;
+    /**
+     * The team ID of this participant, indicating the participant's team.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $teamId
+     */
+    public int $teamId;
 
-	/**
-	 * The ID of the first summoner spell used by this participant.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $spell1Id
-	 */
-	public int $spell1Id;
+    /**
+     * The ID of the first summoner spell used by this participant.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $spell1Id
+     */
+    public int $spell1Id;
 }

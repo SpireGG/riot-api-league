@@ -26,7 +26,7 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   spectator (v4)
  *     - @see LeagueAPI::getCurrentGameInfoBySummoner
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
  *
  * @iterable $perkIds
  *
@@ -34,33 +34,33 @@ namespace RiotAPI\LeagueAPI\Objects;
  */
 class Perks extends ApiObjectIterable
 {
-	/**
-	 * IDs of the perks/runes assigned.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *
-	 * @var int[]|null $perkIds
-	 */
-	public array|null $perkIds = null;
+    /**
+     * IDs of the perks/runes assigned.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *
+     * @var int[]|null $perkIds
+     */
+    public array|null $perkIds = null;
 
-	/**
-	 * Primary runes path.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *
-	 * @var int $perkStyle
-	 */
-	public int $perkStyle;
+    /**
+     * Primary runes path.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *
+     * @var int $perkStyle
+     */
+    public int $perkStyle;
 
-	/**
-	 * Secondary runes path.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *
-	 * @var int $perkSubStyle
-	 */
-	public int $perkSubStyle;
+    /**
+     * Secondary runes path.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *
+     * @var int $perkSubStyle
+     */
+    public int $perkSubStyle;
 }

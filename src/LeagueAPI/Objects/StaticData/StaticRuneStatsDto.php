@@ -30,198 +30,198 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticRuneStatsDto extends ApiObject
 {
-	/** @var double $PercentTimeDeadModPerLevel */
-	public $PercentTimeDeadModPerLevel;
+    /** @var double $PercentTimeDeadModPerLevel */
+    public $PercentTimeDeadModPerLevel;
 
-	/** @var double $PercentArmorPenetrationModPerLevel */
-	public $PercentArmorPenetrationModPerLevel;
+    /** @var double $PercentArmorPenetrationModPerLevel */
+    public $PercentArmorPenetrationModPerLevel;
 
-	/** @var double $PercentCritDamageMod */
-	public $PercentCritDamageMod;
+    /** @var double $PercentCritDamageMod */
+    public $PercentCritDamageMod;
 
-	/** @var double $PercentSpellBlockMod */
-	public $PercentSpellBlockMod;
+    /** @var double $PercentSpellBlockMod */
+    public $PercentSpellBlockMod;
 
-	/** @var double $PercentHPRegenMod */
-	public $PercentHPRegenMod;
+    /** @var double $PercentHPRegenMod */
+    public $PercentHPRegenMod;
 
-	/** @var double $PercentMovementSpeedMod */
-	public $PercentMovementSpeedMod;
+    /** @var double $PercentMovementSpeedMod */
+    public $PercentMovementSpeedMod;
 
-	/** @var double $FlatSpellBlockMod */
-	public $FlatSpellBlockMod;
+    /** @var double $FlatSpellBlockMod */
+    public $FlatSpellBlockMod;
 
-	/** @var double $FlatEnergyRegenModPerLevel */
-	public $FlatEnergyRegenModPerLevel;
+    /** @var double $FlatEnergyRegenModPerLevel */
+    public $FlatEnergyRegenModPerLevel;
 
-	/** @var double $FlatEnergyPoolMod */
-	public $FlatEnergyPoolMod;
+    /** @var double $FlatEnergyPoolMod */
+    public $FlatEnergyPoolMod;
 
-	/** @var double $FlatMagicPenetrationModPerLevel */
-	public $FlatMagicPenetrationModPerLevel;
+    /** @var double $FlatMagicPenetrationModPerLevel */
+    public $FlatMagicPenetrationModPerLevel;
 
-	/** @var double $PercentLifeStealMod */
-	public $PercentLifeStealMod;
+    /** @var double $PercentLifeStealMod */
+    public $PercentLifeStealMod;
 
-	/** @var double $FlatMPPoolMod */
-	public $FlatMPPoolMod;
+    /** @var double $FlatMPPoolMod */
+    public $FlatMPPoolMod;
 
-	/** @var double $PercentCooldownMod */
-	public $PercentCooldownMod;
+    /** @var double $PercentCooldownMod */
+    public $PercentCooldownMod;
 
-	/** @var double $PercentMagicPenetrationMod */
-	public $PercentMagicPenetrationMod;
+    /** @var double $PercentMagicPenetrationMod */
+    public $PercentMagicPenetrationMod;
 
-	/** @var double $FlatArmorPenetrationModPerLevel */
-	public $FlatArmorPenetrationModPerLevel;
+    /** @var double $FlatArmorPenetrationModPerLevel */
+    public $FlatArmorPenetrationModPerLevel;
 
-	/** @var double $FlatMovementSpeedMod */
-	public $FlatMovementSpeedMod;
+    /** @var double $FlatMovementSpeedMod */
+    public $FlatMovementSpeedMod;
 
-	/** @var double $FlatTimeDeadModPerLevel */
-	public $FlatTimeDeadModPerLevel;
+    /** @var double $FlatTimeDeadModPerLevel */
+    public $FlatTimeDeadModPerLevel;
 
-	/** @var double $FlatArmorModPerLevel */
-	public $FlatArmorModPerLevel;
+    /** @var double $FlatArmorModPerLevel */
+    public $FlatArmorModPerLevel;
 
-	/** @var double $PercentAttackSpeedMod */
-	public $PercentAttackSpeedMod;
+    /** @var double $PercentAttackSpeedMod */
+    public $PercentAttackSpeedMod;
 
-	/** @var double $FlatDodgeModPerLevel */
-	public $FlatDodgeModPerLevel;
+    /** @var double $FlatDodgeModPerLevel */
+    public $FlatDodgeModPerLevel;
 
-	/** @var double $PercentMagicDamageMod */
-	public $PercentMagicDamageMod;
+    /** @var double $PercentMagicDamageMod */
+    public $PercentMagicDamageMod;
 
-	/** @var double $PercentBlockMod */
-	public $PercentBlockMod;
+    /** @var double $PercentBlockMod */
+    public $PercentBlockMod;
 
-	/** @var double $FlatDodgeMod */
-	public $FlatDodgeMod;
+    /** @var double $FlatDodgeMod */
+    public $FlatDodgeMod;
 
-	/** @var double $FlatEnergyRegenMod */
-	public $FlatEnergyRegenMod;
+    /** @var double $FlatEnergyRegenMod */
+    public $FlatEnergyRegenMod;
 
-	/** @var double $FlatHPModPerLevel */
-	public $FlatHPModPerLevel;
+    /** @var double $FlatHPModPerLevel */
+    public $FlatHPModPerLevel;
 
-	/** @var double $PercentAttackSpeedModPerLevel */
-	public $PercentAttackSpeedModPerLevel;
+    /** @var double $PercentAttackSpeedModPerLevel */
+    public $PercentAttackSpeedModPerLevel;
 
-	/** @var double $PercentSpellVampMod */
-	public $PercentSpellVampMod;
+    /** @var double $PercentSpellVampMod */
+    public $PercentSpellVampMod;
 
-	/** @var double $FlatMPRegenMod */
-	public $FlatMPRegenMod;
+    /** @var double $FlatMPRegenMod */
+    public $FlatMPRegenMod;
 
-	/** @var double $PercentHPPoolMod */
-	public $PercentHPPoolMod;
+    /** @var double $PercentHPPoolMod */
+    public $PercentHPPoolMod;
 
-	/** @var double $PercentDodgeMod */
-	public $PercentDodgeMod;
+    /** @var double $PercentDodgeMod */
+    public $PercentDodgeMod;
 
-	/** @var double $FlatAttackSpeedMod */
-	public $FlatAttackSpeedMod;
+    /** @var double $FlatAttackSpeedMod */
+    public $FlatAttackSpeedMod;
 
-	/** @var double $FlatArmorMod */
-	public $FlatArmorMod;
+    /** @var double $FlatArmorMod */
+    public $FlatArmorMod;
 
-	/** @var double $FlatMagicDamageModPerLevel */
-	public $FlatMagicDamageModPerLevel;
+    /** @var double $FlatMagicDamageModPerLevel */
+    public $FlatMagicDamageModPerLevel;
 
-	/** @var double $FlatHPRegenMod */
-	public $FlatHPRegenMod;
+    /** @var double $FlatHPRegenMod */
+    public $FlatHPRegenMod;
 
-	/** @var double $PercentPhysicalDamageMod */
-	public $PercentPhysicalDamageMod;
+    /** @var double $PercentPhysicalDamageMod */
+    public $PercentPhysicalDamageMod;
 
-	/** @var double $FlatCritChanceModPerLevel */
-	public $FlatCritChanceModPerLevel;
+    /** @var double $FlatCritChanceModPerLevel */
+    public $FlatCritChanceModPerLevel;
 
-	/** @var double $FlatSpellBlockModPerLevel */
-	public $FlatSpellBlockModPerLevel;
+    /** @var double $FlatSpellBlockModPerLevel */
+    public $FlatSpellBlockModPerLevel;
 
-	/** @var double $PercentTimeDeadMod */
-	public $PercentTimeDeadMod;
+    /** @var double $PercentTimeDeadMod */
+    public $PercentTimeDeadMod;
 
-	/** @var double $FlatBlockMod */
-	public $FlatBlockMod;
+    /** @var double $FlatBlockMod */
+    public $FlatBlockMod;
 
-	/** @var double $PercentMPPoolMod */
-	public $PercentMPPoolMod;
+    /** @var double $PercentMPPoolMod */
+    public $PercentMPPoolMod;
 
-	/** @var double $FlatMagicDamageMod */
-	public $FlatMagicDamageMod;
+    /** @var double $FlatMagicDamageMod */
+    public $FlatMagicDamageMod;
 
-	/** @var double $PercentMPRegenMod */
-	public $PercentMPRegenMod;
+    /** @var double $PercentMPRegenMod */
+    public $PercentMPRegenMod;
 
-	/** @var double $PercentMovementSpeedModPerLevel */
-	public $PercentMovementSpeedModPerLevel;
+    /** @var double $PercentMovementSpeedModPerLevel */
+    public $PercentMovementSpeedModPerLevel;
 
-	/** @var double $PercentCooldownModPerLevel */
-	public $PercentCooldownModPerLevel;
+    /** @var double $PercentCooldownModPerLevel */
+    public $PercentCooldownModPerLevel;
 
-	/** @var double $FlatMPModPerLevel */
-	public $FlatMPModPerLevel;
+    /** @var double $FlatMPModPerLevel */
+    public $FlatMPModPerLevel;
 
-	/** @var double $FlatEnergyModPerLevel */
-	public $FlatEnergyModPerLevel;
+    /** @var double $FlatEnergyModPerLevel */
+    public $FlatEnergyModPerLevel;
 
-	/** @var double $FlatPhysicalDamageMod */
-	public $FlatPhysicalDamageMod;
+    /** @var double $FlatPhysicalDamageMod */
+    public $FlatPhysicalDamageMod;
 
-	/** @var double $FlatHPRegenModPerLevel */
-	public $FlatHPRegenModPerLevel;
+    /** @var double $FlatHPRegenModPerLevel */
+    public $FlatHPRegenModPerLevel;
 
-	/** @var double $FlatCritDamageMod */
-	public $FlatCritDamageMod;
+    /** @var double $FlatCritDamageMod */
+    public $FlatCritDamageMod;
 
-	/** @var double $PercentArmorMod */
-	public $PercentArmorMod;
+    /** @var double $PercentArmorMod */
+    public $PercentArmorMod;
 
-	/** @var double $FlatMagicPenetrationMod */
-	public $FlatMagicPenetrationMod;
+    /** @var double $FlatMagicPenetrationMod */
+    public $FlatMagicPenetrationMod;
 
-	/** @var double $PercentCritChanceMod */
-	public $PercentCritChanceMod;
+    /** @var double $PercentCritChanceMod */
+    public $PercentCritChanceMod;
 
-	/** @var double $FlatPhysicalDamageModPerLevel */
-	public $FlatPhysicalDamageModPerLevel;
+    /** @var double $FlatPhysicalDamageModPerLevel */
+    public $FlatPhysicalDamageModPerLevel;
 
-	/** @var double $PercentArmorPenetrationMod */
-	public $PercentArmorPenetrationMod;
+    /** @var double $PercentArmorPenetrationMod */
+    public $PercentArmorPenetrationMod;
 
-	/** @var double $PercentEXPBonus */
-	public $PercentEXPBonus;
+    /** @var double $PercentEXPBonus */
+    public $PercentEXPBonus;
 
-	/** @var double $FlatMPRegenModPerLevel */
-	public $FlatMPRegenModPerLevel;
+    /** @var double $FlatMPRegenModPerLevel */
+    public $FlatMPRegenModPerLevel;
 
-	/** @var double $PercentMagicPenetrationModPerLevel */
-	public $PercentMagicPenetrationModPerLevel;
+    /** @var double $PercentMagicPenetrationModPerLevel */
+    public $PercentMagicPenetrationModPerLevel;
 
-	/** @var double $FlatTimeDeadMod */
-	public $FlatTimeDeadMod;
+    /** @var double $FlatTimeDeadMod */
+    public $FlatTimeDeadMod;
 
-	/** @var double $FlatMovementSpeedModPerLevel */
-	public $FlatMovementSpeedModPerLevel;
+    /** @var double $FlatMovementSpeedModPerLevel */
+    public $FlatMovementSpeedModPerLevel;
 
-	/** @var double $FlatGoldPer10Mod */
-	public $FlatGoldPer10Mod;
+    /** @var double $FlatGoldPer10Mod */
+    public $FlatGoldPer10Mod;
 
-	/** @var double $FlatArmorPenetrationMod */
-	public $FlatArmorPenetrationMod;
+    /** @var double $FlatArmorPenetrationMod */
+    public $FlatArmorPenetrationMod;
 
-	/** @var double $FlatCritDamageModPerLevel */
-	public $FlatCritDamageModPerLevel;
+    /** @var double $FlatCritDamageModPerLevel */
+    public $FlatCritDamageModPerLevel;
 
-	/** @var double $FlatHPPoolMod */
-	public $FlatHPPoolMod;
+    /** @var double $FlatHPPoolMod */
+    public $FlatHPPoolMod;
 
-	/** @var double $FlatCritChanceMod */
-	public $FlatCritChanceMod;
+    /** @var double $FlatCritChanceMod */
+    public $FlatCritChanceMod;
 
-	/** @var double $FlatEXPBonus */
-	public $FlatEXPBonus;
+    /** @var double $FlatEXPBonus */
+    public $FlatEXPBonus;
 }

@@ -32,20 +32,20 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticItemListDto extends ApiObjectIterable
 {
-	/** @var StaticItemDto[] $data */
-	public $data;
+    /** @var StaticItemDto[] $data */
+    public $data;
 
-	/** @var string $version */
-	public $version;
+    /** @var string $version */
+    public $version;
 
-	/** @var StaticItemTreeDto[] $tree */
-	public $tree;
+    /** @var StaticItemTreeDto[] $tree */
+    public $tree;
 
-	/** @var StaticGroupDto[] $groups */
-	public $groups;
+    /** @var StaticGroupDto[] $groups */
+    public $groups;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 
 	/** @var string $basic */
 	public $basic;

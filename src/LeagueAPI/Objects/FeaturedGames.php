@@ -26,7 +26,7 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   spectator (v4)
  *     - @see LeagueAPI::getFeaturedGames
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
  *
  * @iterable $gameList
  *
@@ -34,23 +34,23 @@ namespace RiotAPI\LeagueAPI\Objects;
  */
 class FeaturedGames extends ApiObjectIterable
 {
-	/**
-	 * The list of featured games.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var FeaturedGameInfo[] $gameList
-	 */
-	public array $gameList;
+    /**
+     * The list of featured games.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var FeaturedGameInfo[] $gameList
+     */
+    public array $gameList;
 
-	/**
-	 * The suggested interval to wait before requesting FeaturedGames again.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $clientRefreshInterval
-	 */
-	public int $clientRefreshInterval;
+    /**
+     * The suggested interval to wait before requesting FeaturedGames again.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $clientRefreshInterval
+     */
+    public int $clientRefreshInterval;
 }

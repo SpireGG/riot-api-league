@@ -26,41 +26,41 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getMatch
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class MatchTeamDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var BanDto[] $bans
-	 */
-	public array $bans;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var BanDto[] $bans
+     */
+    public array $bans;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var ObjectivesDto $objectives
-	 */
-	public ObjectivesDto $objectives;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var ObjectivesDto $objectives
+     */
+    public ObjectivesDto $objectives;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var int $teamId
-	 */
-	public int $teamId;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int $teamId
+     */
+    public int $teamId;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var bool $win
-	 */
-	public bool $win;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var bool $win
+     */
+    public bool $win;
 }

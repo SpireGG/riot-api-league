@@ -30,9 +30,9 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticBlockItemDto extends ApiObject
 {
-	/** @var int $count */
-	public $count;
+    /** @var int $count */
+    public $count;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 }

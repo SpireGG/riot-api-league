@@ -30,12 +30,12 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticPassiveDto extends ApiObject
 {
-	/** @var StaticImageDto $image */
-	public $image;
+    /** @var StaticImageDto $image */
+    public $image;
 
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 
-	/** @var string $description */
-	public $description;
+    /** @var string $description */
+    public $description;
 }

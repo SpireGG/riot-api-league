@@ -30,21 +30,21 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticMasteryTreeDto extends ApiObject
 {
-	/** @var StaticMasteryTreeListDto[] $Resolve */
-	public $Resolve;
+    /** @var StaticMasteryTreeListDto[] $Resolve */
+    public $Resolve;
 
-	/** @var StaticMasteryTreeListDto[] $Defense */
-	public $Defense;
+    /** @var StaticMasteryTreeListDto[] $Defense */
+    public $Defense;
 
-	/** @var StaticMasteryTreeListDto[] $Utility */
-	public $Utility;
+    /** @var StaticMasteryTreeListDto[] $Utility */
+    public $Utility;
 
-	/** @var StaticMasteryTreeListDto[] $Offense */
-	public $Offense;
+    /** @var StaticMasteryTreeListDto[] $Offense */
+    public $Offense;
 
-	/** @var StaticMasteryTreeListDto[] $Ferocity */
-	public $Ferocity;
+    /** @var StaticMasteryTreeListDto[] $Ferocity */
+    public $Ferocity;
 
-	/** @var StaticMasteryTreeListDto[] $Cunning */
-	public $Cunning;
+    /** @var StaticMasteryTreeListDto[] $Cunning */
+    public $Cunning;
 }

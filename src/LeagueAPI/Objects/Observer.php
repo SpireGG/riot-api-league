@@ -26,22 +26,22 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   spectator (v4)
  *     - @see LeagueAPI::getCurrentGameInfoBySummoner
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
  *     - @see LeagueAPI::getFeaturedGames
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class Observer extends ApiObject
 {
-	/**
-	 * Key used to decrypt the spectator grid game data for playback.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getCurrentGameInfoBySummoner
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var string $encryptionKey
-	 */
-	public string $encryptionKey;
+    /**
+     * Key used to decrypt the spectator grid game data for playback.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var string $encryptionKey
+     */
+    public string $encryptionKey;
 }

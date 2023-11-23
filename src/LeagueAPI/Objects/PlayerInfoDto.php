@@ -26,41 +26,41 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   lol-challenges (v1)
  *     - @see LeagueAPI::getPlayerData
- *       @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getPlayerData
+ * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getPlayerData
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class PlayerInfoDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlayerData
-	 *
-	 * @var ChallengeInfoDto[] $challenges
-	 */
-	public array $challenges;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlayerData
+     *
+     * @var ChallengeInfoDto[] $challenges
+     */
+    public array $challenges;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlayerData
-	 *
-	 * @var PlayerClientPreferencesDto $preferences
-	 */
-	public PlayerClientPreferencesDto $preferences;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlayerData
+     *
+     * @var PlayerClientPreferencesDto $preferences
+     */
+    public PlayerClientPreferencesDto $preferences;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlayerData
-	 *
-	 * @var ChallengePointsDto $totalPoints
-	 */
-	public ChallengePointsDto $totalPoints;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlayerData
+     *
+     * @var ChallengePointsDto $totalPoints
+     */
+    public ChallengePointsDto $totalPoints;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlayerData
-	 *
-	 * @var ChallengePointsDto[] $categoryPoints
-	 */
-	public array $categoryPoints;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlayerData
+     *
+     * @var ChallengePointsDto[] $categoryPoints
+     */
+    public array $categoryPoints;
 }

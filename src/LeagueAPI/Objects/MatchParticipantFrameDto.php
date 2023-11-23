@@ -26,22 +26,22 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getTimeline
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getTimeline
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getTimeline
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class MatchParticipantFrameDto extends ApiObject
 {
-	public MatchChampionStatsDto $championStats;
-	public int $currentGold;
-	public DamageStatsDto $damageStats;
-	public int $goldPerSecond;
-	public int $jungleMinionsKilled;
-	public int $level;
-	public int $minionsKilled;
-	public int $participantId;
-	public MatchPositionDto $position;
-	public int $timeEnemySpentControlled;
-	public int $totalGold;
-	public int $xp;
+    public MatchChampionStatsDto $championStats;
+    public int $currentGold;
+    public DamageStatsDto $damageStats;
+    public int $goldPerSecond;
+    public int $jungleMinionsKilled;
+    public int $level;
+    public int $minionsKilled;
+    public int $participantId;
+    public MatchPositionDto $position;
+    public int $timeEnemySpentControlled;
+    public int $totalGold;
+    public int $xp;
 }

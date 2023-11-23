@@ -30,30 +30,30 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticRuneDto extends ApiObject
 {
-	/** @var StaticRuneStatsDto $stats */
-	public $stats;
+    /** @var StaticRuneStatsDto $stats */
+    public $stats;
 
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 
-	/** @var string[] $tags */
-	public $tags;
+    /** @var string[] $tags */
+    public $tags;
 
-	/** @var StaticImageDto $image */
-	public $image;
+    /** @var StaticImageDto $image */
+    public $image;
 
-	/** @var StaticMetaDataDto $rune */
-	public $rune;
+    /** @var StaticMetaDataDto $rune */
+    public $rune;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 
-	/** @var string $description */
-	public $description;
+    /** @var string $description */
+    public $description;
 
-	/** @var string $colloq */
-	public $colloq;
+    /** @var string $colloq */
+    public $colloq;
 
-	/** @var string $plaintext */
-	public $plaintext;
+    /** @var string $plaintext */
+    public $plaintext;
 }

@@ -32,15 +32,15 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticChampionListDto extends ApiObjectIterable
 {
-	/** @var StaticChampionDto[] $data */
-	public $data;
+    /** @var StaticChampionDto[] $data */
+    public $data;
 
-	/** @var string $version */
-	public $version;
+    /** @var string $version */
+    public $version;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 
-	/** @var string $format */
-	public $format;
+    /** @var string $format */
+    public $format;
 }

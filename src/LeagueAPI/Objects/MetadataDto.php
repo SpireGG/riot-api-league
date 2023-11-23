@@ -26,39 +26,39 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getMatch
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class MetadataDto extends ApiObject
 {
-	/**
-	 * A list of participant PUUIDs.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var string[] $participants
-	 */
-	public array $participants;
+    /**
+     * A list of participant PUUIDs.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var string[] $participants
+     */
+    public array $participants;
 
-	/**
-	 * Match data version.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var string $dataVersion
-	 */
-	public string $dataVersion;
+    /**
+     * Match data version.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var string $dataVersion
+     */
+    public string $dataVersion;
 
-	/**
-	 * Match id.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var string $matchId
-	 */
-	public string $matchId;
+    /**
+     * Match id.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var string $matchId
+     */
+    public string $matchId;
 }

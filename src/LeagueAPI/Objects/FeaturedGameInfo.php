@@ -26,7 +26,7 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   spectator (v4)
  *     - @see LeagueAPI::getFeaturedGames
- *       @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
+ * @link https://developer.riotgames.com/apis#spectator-v4/GET_getFeaturedGames
  *
  * @iterable $participants
  *
@@ -34,114 +34,114 @@ namespace RiotAPI\LeagueAPI\Objects;
  */
 class FeaturedGameInfo extends ApiObjectIterable
 {
-	/**
-	 * The game mode (Legal values: CLASSIC, ODIN, ARAM, TUTORIAL, ONEFORALL,
-	 * ASCENSION, FIRSTBLOOD, KINGPORO).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var string $gameMode
-	 */
-	public string $gameMode;
+    /**
+     * The game mode (Legal values: CLASSIC, ODIN, ARAM, TUTORIAL, ONEFORALL,
+     * ASCENSION, FIRSTBLOOD, KINGPORO).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var string $gameMode
+     */
+    public string $gameMode;
 
-	/**
-	 * The amount of time in seconds that has passed since the game started.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $gameLength
-	 */
-	public int $gameLength;
+    /**
+     * The amount of time in seconds that has passed since the game started.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $gameLength
+     */
+    public int $gameLength;
 
-	/**
-	 * The ID of the map.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $mapId
-	 */
-	public int $mapId;
+    /**
+     * The ID of the map.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $mapId
+     */
+    public int $mapId;
 
-	/**
-	 * The game type (Legal values: CUSTOM_GAME, MATCHED_GAME, TUTORIAL_GAME).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var string $gameType
-	 */
-	public string $gameType;
+    /**
+     * The game type (Legal values: CUSTOM_GAME, MATCHED_GAME, TUTORIAL_GAME).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var string $gameType
+     */
+    public string $gameType;
 
-	/**
-	 * Banned champion information.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var BannedChampion[] $bannedChampions
-	 */
-	public array $bannedChampions;
+    /**
+     * Banned champion information.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var BannedChampion[] $bannedChampions
+     */
+    public array $bannedChampions;
 
-	/**
-	 * The ID of the game.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $gameId
-	 */
-	public int $gameId;
+    /**
+     * The ID of the game.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $gameId
+     */
+    public int $gameId;
 
-	/**
-	 * The observer information.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var Observer $observers
-	 */
-	public Observer $observers;
+    /**
+     * The observer information.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var Observer $observers
+     */
+    public Observer $observers;
 
-	/**
-	 * The queue type (queue types are documented on the Game Constants page).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $gameQueueConfigId
-	 */
-	public int $gameQueueConfigId;
+    /**
+     * The queue type (queue types are documented on the Game Constants page).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $gameQueueConfigId
+     */
+    public int $gameQueueConfigId;
 
-	/**
-	 * The game start time represented in epoch milliseconds.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var int $gameStartTime
-	 */
-	public int $gameStartTime;
+    /**
+     * The game start time represented in epoch milliseconds.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var int $gameStartTime
+     */
+    public int $gameStartTime;
 
-	/**
-	 * The participant information.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var Participant[] $participants
-	 */
-	public array $participants;
+    /**
+     * The participant information.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var Participant[] $participants
+     */
+    public array $participants;
 
-	/**
-	 * The ID of the platform on which the game is being played.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getFeaturedGames
-	 *
-	 * @var string $platformId
-	 */
-	public string $platformId;
+    /**
+     * The ID of the platform on which the game is being played.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getFeaturedGames
+     *
+     * @var string $platformId
+     */
+    public string $platformId;
 }

@@ -32,12 +32,12 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticProfileIconDataDto extends ApiObjectIterable
 {
-	/** @var StaticProfileIconDetailsDto[] $data */
-	public $data;
+    /** @var StaticProfileIconDetailsDto[] $data */
+    public $data;
 
-	/** @var string $version */
-	public $version;
+    /** @var string $version */
+    public $version;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 }

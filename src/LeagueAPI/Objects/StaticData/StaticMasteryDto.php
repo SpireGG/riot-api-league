@@ -30,28 +30,28 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticMasteryDto extends ApiObject
 {
-	/** @var string $prereq */
-	public $prereq;
+    /** @var string $prereq */
+    public $prereq;
 
-	/**
-	 *   (Legal values: Cunning, Ferocity, Resolve, Defense, Offense, Utility).
-	 *
-	 * @var string $masteryTree
-	 */
-	public $masteryTree;
+    /**
+     *   (Legal values: Cunning, Ferocity, Resolve, Defense, Offense, Utility).
+     *
+     * @var string $masteryTree
+     */
+    public $masteryTree;
 
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 
-	/** @var int $ranks */
-	public $ranks;
+    /** @var int $ranks */
+    public $ranks;
 
-	/** @var StaticImageDto $image */
-	public $image;
+    /** @var StaticImageDto $image */
+    public $image;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 
-	/** @var string[] $description */
-	public $description;
+    /** @var string[] $description */
+    public $description;
 }

@@ -32,15 +32,15 @@ use RiotAPI\LeagueAPI\Objects\ApiObjectIterable;
  */
 class StaticMasteryListDto extends ApiObjectIterable
 {
-	/** @var StaticMasteryDto[] $data */
-	public $data;
+    /** @var StaticMasteryDto[] $data */
+    public $data;
 
-	/** @var string $version */
-	public $version;
+    /** @var string $version */
+    public $version;
 
-	/** @var StaticMasteryTreeDto $tree */
-	public $tree;
+    /** @var StaticMasteryTreeDto $tree */
+    public $tree;
 
-	/** @var string $type */
-	public $type;
+    /** @var string $type */
+    public $type;
 }

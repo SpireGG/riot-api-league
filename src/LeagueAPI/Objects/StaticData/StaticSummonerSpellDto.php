@@ -30,75 +30,75 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticSummonerSpellDto extends ApiObject
 {
-	/** @var StaticSpellVarsDto[] $vars */
-	public $vars;
+    /** @var StaticSpellVarsDto[] $vars */
+    public $vars;
 
-	/** @var StaticImageDto $image */
-	public $image;
+    /** @var StaticImageDto $image */
+    public $image;
 
-	/** @var string $costBurn */
-	public $costBurn;
+    /** @var string $costBurn */
+    public $costBurn;
 
-	/** @var double[] $cooldown */
-	public $cooldown;
+    /** @var double[] $cooldown */
+    public $cooldown;
 
-	/** @var string[] $effectBurn */
-	public $effectBurn;
+    /** @var string[] $effectBurn */
+    public $effectBurn;
 
-	/** @var int $id */
-	public $id;
+    /** @var int $id */
+    public $id;
 
-	/** @var string $cooldownBurn */
-	public $cooldownBurn;
+    /** @var string $cooldownBurn */
+    public $cooldownBurn;
 
-	/** @var string $tooltip */
-	public $tooltip;
+    /** @var string $tooltip */
+    public $tooltip;
 
-	/** @var int $maxrank */
-	public $maxrank;
+    /** @var int $maxrank */
+    public $maxrank;
 
-	/** @var string $rangeBurn */
-	public $rangeBurn;
+    /** @var string $rangeBurn */
+    public $rangeBurn;
 
-	/** @var string $description */
-	public $description;
+    /** @var string $description */
+    public $description;
 
-	/**
-	 *   This field is a List of List of Double.
-	 *
-	 * @var int[][] $effect
-	 */
-	public $effect;
+    /**
+     *   This field is a List of List of Double.
+     *
+     * @var int[][] $effect
+     */
+    public $effect;
 
-	/** @var string $key */
-	public $key;
+    /** @var string $key */
+    public $key;
 
-	/** @var StaticLevelTipDto $leveltip */
-	public $leveltip;
+    /** @var StaticLevelTipDto $leveltip */
+    public $leveltip;
 
-	/** @var string[] $modes */
-	public $modes;
+    /** @var string[] $modes */
+    public $modes;
 
-	/** @var string $resource */
-	public $resource;
+    /** @var string $resource */
+    public $resource;
 
-	/** @var string $name */
-	public $name;
+    /** @var string $name */
+    public $name;
 
-	/** @var string $costType */
-	public $costType;
+    /** @var string $costType */
+    public $costType;
 
-	/**
-	 *   This field is either a List of Integer or the String 'self' for spells 
-	 * that target one's own champion.
-	 *
-	 * @var int[] $range
-	 */
-	public $range;
+    /**
+     *   This field is either a List of Integer or the String 'self' for spells
+     * that target one's own champion.
+     *
+     * @var int[] $range
+     */
+    public $range;
 
-	/** @var int[] $cost */
-	public $cost;
+    /** @var int[] $cost */
+    public $cost;
 
-	/** @var int $summonerLevel */
-	public $summonerLevel;
+    /** @var int $summonerLevel */
+    public $summonerLevel;
 }

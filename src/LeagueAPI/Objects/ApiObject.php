@@ -19,16 +19,10 @@
 
 namespace RiotAPI\LeagueAPI\Objects;
 
-use stdClass;
-use Exception;
-
 use ReflectionClass;
 use ReflectionException;
-
-use RiotAPI\Base\Objects\ApiObject as BaseApiObject;
 use RiotAPI\Base\BaseAPI;
-use RiotAPI\Base\Exceptions\GeneralException;
-use RiotAPI\Base\Exceptions\SettingsException;
+use RiotAPI\Base\Objects\ApiObject as BaseApiObject;
 use RiotAPI\LeagueAPI\LeagueAPI;
 
 
@@ -39,72 +33,64 @@ use RiotAPI\LeagueAPI\LeagueAPI;
  */
 abstract class ApiObject extends BaseApiObject
 {
-	/**
-	 *   ApiObject constructor.
-	 *
-	 * @param array $data
-	 * @param BaseAPI $api
-	 */
-	public function __construct(array $data, ?BaseAPI $api)
-	{
-		// pass data to base class constructor
-		parent::__construct($data, $api);
+    /**
+     *   ApiObject constructor.
+     *
+     * @param array $data
+     * @param BaseAPI|null $api
+     * @throws ReflectionException
+     */
+    public function __construct(array $data, ?BaseAPI $api)
+    {
+        // pass data to base class constructor
+        parent::__construct($data, $api);
 
-		// Tries to assigns data to class properties
-		$selfRef = new ReflectionClass($this);
-		$linkableProp = $selfRef->hasProperty('staticData')
-			? self::getLinkablePropertyData($selfRef->getDocComment())
-			: [ 'function' => false, 'parameter' => false ];
+        // Tries to assigns data to class properties
+        $selfRef = new ReflectionClass($this);
+        $linkableProp = $selfRef->hasProperty('staticData')
+            ? self::getLinkablePropertyData($selfRef->getDocComment())
+            : ['function' => false, 'parameter' => false];
 
-		foreach ($data as $property => $value)
-		{
-			try
-			{
-				//  Is API reference passed?
-				if ($api)
-				{
-					//  Should this property be linked and is it allowed?
-					if ($linkableProp['parameter'] == $property && $api->getSetting(LeagueAPI::SET_STATICDATA_LINKING, false))
-					{
-						$apiRef = new ReflectionClass(LeagueAPI::class);
-						$linkingFunctionRef = $apiRef->getMethod($linkableProp['function']);
+        foreach ($data as $property => $value) {
+            try {
+                //  Is API reference passed?
+                if ($api) {
+                    //  Should this property be linked and is it allowed?
+                    if ($linkableProp['parameter'] == $property && $api->getSetting(LeagueAPI::SET_STATICDATA_LINKING, false)) {
+                        $apiRef = new ReflectionClass(LeagueAPI::class);
+                        $linkingFunctionRef = $apiRef->getMethod($linkableProp['function']);
 
-						$params = [ $value ];
-						foreach ($linkingFunctionRef->getParameters() as $parameter)
-						{
-							switch ($parameter->getName())
-							{
-								// Extended data fetch?
-								case "extended":
-									$params[] = true;
-									break;
+                        $params = [$value];
+                        foreach ($linkingFunctionRef->getParameters() as $parameter) {
+                            switch ($parameter->getName()) {
+                                // Extended data fetch?
+                                // Data by key?
+                                case "data_by_key":
+                                case "extended":
+                                    $params[] = true;
+                                    break;
 
-								// Data by key?
-								case "data_by_key":
-									$params[] = true;
-									break;
+                                // Request locale
+                                case "locale":
+                                    $params[] = $api->getSetting(LeagueAPI::SET_STATICDATA_LOCALE, $parameter->getDefaultValue());
+                                    break;
 
-								// Request locale
-								case "locale":
-									$params[] = $api->getSetting(LeagueAPI::SET_STATICDATA_LOCALE, $parameter->getDefaultValue());
-									break;
+                                // Static data version
+                                case "version":
+                                    $params[] = $api->getSetting(LeagueAPI::SET_STATICDATA_VERSION, $parameter->getDefaultValue());
+                                    break;
 
-								// Static data version
-								case "version":
-									$params[] = $api->getSetting(LeagueAPI::SET_STATICDATA_VERSION, $parameter->getDefaultValue());
-									break;
+                                default:
+                                    break;
+                            }
+                        }
 
-								default:
-									break;
-							}
-						}
-
-						$this->staticData = $linkingFunctionRef->invokeArgs($api, $params);
-					}
-				}
-			}
-			//  If property does not exist
-			catch (ReflectionException $ex) {}
-		}
-	}
+                        $this->staticData = $linkingFunctionRef->invokeArgs($api, $params);
+                    }
+                }
+            } //  If property does not exist
+            catch (ReflectionException $ex) {
+            }
+        }
+    }
 }

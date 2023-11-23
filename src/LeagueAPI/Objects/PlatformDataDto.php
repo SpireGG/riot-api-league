@@ -26,49 +26,49 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   lol-status (v4)
  *     - @see LeagueAPI::getPlatformData
- *       @link https://developer.riotgames.com/apis#lol-status-v4/GET_getPlatformData
+ * @link https://developer.riotgames.com/apis#lol-status-v4/GET_getPlatformData
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class PlatformDataDto extends ApiObject
 {
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string $id
-	 */
-	public string $id;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string $id
+     */
+    public string $id;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string $name
-	 */
-	public string $name;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string $name
+     */
+    public string $name;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var string[] $locales
-	 */
-	public array $locales;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var string[] $locales
+     */
+    public array $locales;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var StatusDto[] $maintenances
-	 */
-	public array $maintenances;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var StatusDto[] $maintenances
+     */
+    public array $maintenances;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getPlatformData
-	 *
-	 * @var StatusDto[] $incidents
-	 */
-	public array $incidents;
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getPlatformData
+     *
+     * @var StatusDto[] $incidents
+     */
+    public array $incidents;
 }

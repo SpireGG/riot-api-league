@@ -26,29 +26,29 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getMatch
- *       @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
+ * @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class MatchDto extends ApiObject
 {
-	/**
-	 * Match metadata.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var MetadataDto $metadata
-	 */
-	public MetadataDto $metadata;
+    /**
+     * Match metadata.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var MetadataDto $metadata
+     */
+    public MetadataDto $metadata;
 
-	/**
-	 * Match info.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var InfoDto $info
-	 */
-	public InfoDto $info;
+    /**
+     * Match info.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var InfoDto $info
+     */
+    public InfoDto $info;
 }

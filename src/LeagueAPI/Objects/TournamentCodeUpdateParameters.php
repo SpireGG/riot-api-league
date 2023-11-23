@@ -26,25 +26,25 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   tournament (v4)
  *     - @see LeagueAPI::updateCode
- *       @link https://developer.riotgames.com/apis#tournament-v4/PUT_updateCode
+ * @link https://developer.riotgames.com/apis#tournament-v4/PUT_updateCode
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
 class TournamentCodeUpdateParameters extends ApiObject
 {
-	/**
-	 * Optional list of encrypted summonerIds in order to validate the players
-	 * eligible to join the lobby. NOTE: We currently do not enforce
-	 * participants at the team level, but rather the aggregate of teamOne and
-	 * teamTwo. We may add the ability to enforce at the team level in the
-	 * future.
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::updateCode
-	 *
-	 * @var string[] $allowedSummonerIds
-	 */
-	public array $allowedSummonerIds;
+    /**
+     * Optional list of encrypted summonerIds in order to validate the players
+     * eligible to join the lobby. NOTE: We currently do not enforce
+     * participants at the team level, but rather the aggregate of teamOne and
+     * teamTwo. We may add the ability to enforce at the team level in the
+     * future.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::updateCode
+     *
+     * @var string[] $allowedSummonerIds
+     */
+    public array $allowedSummonerIds;
 
     /**
      * The team size of the game. Valid values are 1-5.
@@ -56,35 +56,35 @@ class TournamentCodeUpdateParameters extends ApiObject
      */
     public int $teamSize;
 
-	/**
-	 * The pick type (Legal values: BLIND_PICK, DRAFT_MODE, ALL_RANDOM,
-	 * TOURNAMENT_DRAFT).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::updateCode
-	 *
-	 * @var string $pickType
-	 */
-	public string $pickType;
+    /**
+     * The pick type (Legal values: BLIND_PICK, DRAFT_MODE, ALL_RANDOM,
+     * TOURNAMENT_DRAFT).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::updateCode
+     *
+     * @var string $pickType
+     */
+    public string $pickType;
 
-	/**
-	 * The map type (Legal values: SUMMONERS_RIFT, TWISTED_TREELINE,
-	 * HOWLING_ABYSS).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::updateCode
-	 *
-	 * @var string $mapType
-	 */
-	public string $mapType;
+    /**
+     * The map type (Legal values: SUMMONERS_RIFT, TWISTED_TREELINE,
+     * HOWLING_ABYSS).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::updateCode
+     *
+     * @var string $mapType
+     */
+    public string $mapType;
 
-	/**
-	 * The spectator type (Legal values: NONE, LOBBYONLY, ALL).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::updateCode
-	 *
-	 * @var string $spectatorType
-	 */
-	public string $spectatorType;
+    /**
+     * The spectator type (Legal values: NONE, LOBBYONLY, ALL).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::updateCode
+     *
+     * @var string $spectatorType
+     */
+    public string $spectatorType;
 }

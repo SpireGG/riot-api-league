@@ -30,9 +30,9 @@ use RiotAPI\LeagueAPI\Objects\ApiObject;
  */
 class StaticLevelTipDto extends ApiObject
 {
-	/** @var string[] $effect */
-	public $effect;
+    /** @var string[] $effect */
+    public $effect;
 
-	/** @var string[] $label */
-	public $label;
+    /** @var string[] $label */
+    public $label;
 }
