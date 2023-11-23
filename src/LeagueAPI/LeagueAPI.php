@@ -1127,7 +1127,7 @@ class LeagueAPI extends BaseAPI
     {
         $continent_region = $this->platforms->getCorrespondingContinentRegion($this->getSetting(self::SET_REGION));
 
-        $resultPromise = $this->setEndpoint("/riot/" . self::RESOURCE_ACCOUNT_VERSION . "/accounts/by-puuid/$puuid")
+        $resultPromise = $this->setEndpoint("/riot/account/" . self::RESOURCE_ACCOUNT_VERSION . "/accounts/by-puuid/$puuid")
             ->setResource(self::RESOURCE_ACCOUNT, "/account/%s")
             ->makeCall($continent_region);
 
@@ -1159,7 +1159,7 @@ class LeagueAPI extends BaseAPI
     {
         $continent_region = $this->platforms->getCorrespondingContinentRegion($this->getSetting(self::SET_REGION));
 
-        $resultPromise = $this->setEndpoint("/riot/" . self::RESOURCE_ACCOUNT_VERSION . "/accounts/by-riot-id/$gameName/$tagLine")
+        $resultPromise = $this->setEndpoint("/riot/account/" . self::RESOURCE_ACCOUNT_VERSION . "/accounts/by-riot-id/$gameName/$tagLine")
             ->setResource(self::RESOURCE_ACCOUNT, "/account/%s")
             ->makeCall($continent_region);
 
