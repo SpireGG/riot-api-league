@@ -46,7 +46,7 @@ class LeagueAPI extends BaseAPI
 	/**
 	 * Settings constants.
 	 */
-	const
+	public const
 		SET_TOURNAMENT_KEY           = 'SET_TOURNAMENT_KEY',           /** API key used when working with tournaments **/
 		SET_INTERIM                  = 'SET_INTERIM',                  /** Used to set whether or not is your application in Interim mode (Tournament STUB endpoints) **/
 		SET_DD_CACHE_PROVIDER_PARAMS = 'SET_DD_CACHE_PROVIDER_PARAMS', /** Specifies parameters passed to DataDragonAPI CacheProvider class when initializing **/
@@ -59,7 +59,7 @@ class LeagueAPI extends BaseAPI
 	/**
 	 * Pick type constants.
 	 */
-	const
+	public const
 		PICK_BLIND            = 'BLIND_PICK',
 		PICK_DRAFT            = 'DRAFT_MODE',
 		PICK_RANDOM           = 'ALL_RANDOM',
@@ -68,7 +68,7 @@ class LeagueAPI extends BaseAPI
 	/**
 	 * Map constants.
 	 */
-	const
+	public const
 		MAP_SUMMONERS_RIFT   = 'SUMMONERS_RIFT',
 		MAP_TWISTED_TREELINE = 'TWISTED_TREELINE',
 		MAP_HOWLING_ABYSS    = 'HOWLING_ABYSS';
@@ -76,12 +76,12 @@ class LeagueAPI extends BaseAPI
 	/**
 	 * Spectator type constants.
 	 */
-	const
+	public const
 		SPECTATOR_NONE       = 'NONE',
 		SPECTATOR_LOBBY_ONLY = 'LOBBYONLY',
 		SPECTATOR_ALL        = 'ALL';
 
-	const
+	public const
 		MATCH_ALLOWED_TYPES = [
 			"ranked",
 			"normal",
@@ -89,7 +89,7 @@ class LeagueAPI extends BaseAPI
 			"tutorial",
 		];
 
-	const
+	public const
 		CHALLENGES_ALLOWED_LEVELS = [
 			"MASTER",
 			"GRANDMASTER",
@@ -99,7 +99,7 @@ class LeagueAPI extends BaseAPI
 	/**
 	 * Constants required for tournament API calls.
 	 */
-	const
+	public const
 		TOURNAMENT_ALLOWED_PICK_TYPES = [
 			self::PICK_BLIND,
 			self::PICK_DRAFT,
@@ -129,7 +129,7 @@ class LeagueAPI extends BaseAPI
 			Region::TURKEY,
 		];
 
-	const
+	public const
 		//  List of required setting keys
 		SETTINGS_REQUIRED = [],
 		//  List of allowed setting keys
@@ -154,7 +154,7 @@ class LeagueAPI extends BaseAPI
 	 *
 	 * @var array $resources
 	 */
-	protected array $resources = [
+	protected $resources = [
 		self::RESOURCE_CHAMPION,
 		self::RESOURCE_CHAMPIONMASTERY,
 		self::RESOURCE_CHALLENGES,
@@ -222,8 +222,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#champion-v3
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_CHAMPION = '1237:champion';
-	const RESOURCE_CHAMPION_VERSION = 'v3';
+	public const RESOURCE_CHAMPION = '1237:champion';
+	public const RESOURCE_CHAMPION_VERSION = 'v3';
 
 
 	/**
@@ -257,8 +257,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#champion-mastery-v4
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_CHAMPIONMASTERY = '1418:champion-mastery';
-	const RESOURCE_CHAMPIONMASTERY_VERSION = 'v4';
+	public const RESOURCE_CHAMPIONMASTERY = '1418:champion-mastery';
+	public const RESOURCE_CHAMPIONMASTERY_VERSION = 'v4';
 
 	/**
 	 *   Get a champion mastery by player id and champion id. Response code 204 means
@@ -362,8 +362,8 @@ class LeagueAPI extends BaseAPI
      *     @link https://developer.riotgames.com/apis#lol-challenges-v1
      * ==================================================================dd=
      **/
-    const RESOURCE_CHALLENGES = '1539:challenges';
-    const RESOURCE_CHALLENGES_VERSION = 'v1';
+    public const RESOURCE_CHALLENGES = '1539:challenges';
+    public const RESOURCE_CHALLENGES_VERSION = 'v1';
 
     /**
      *   List of all basic challenge configuration information (includes all translations for names and descriptions).
@@ -549,8 +549,8 @@ class LeagueAPI extends BaseAPI
      *     @link https://developer.riotgames.com/apis#clash-v1
      * ==================================================================dd=
      **/
-    const RESOURCE_CLASH = '1497:clash';
-    const RESOURCE_CLASH_VERSION = 'v1';
+    public const RESOURCE_CLASH = '1497:clash';
+    public const RESOURCE_CLASH_VERSION = 'v1';
 
     /**
      *   Get players by PUUID.
@@ -740,8 +740,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#spectator-v4
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_SPECTATOR = '1419:spectator';
-	const RESOURCE_SPECTATOR_VERSION = 'v4';
+	public const RESOURCE_SPECTATOR = '1419:spectator';
+	public const RESOURCE_SPECTATOR_VERSION = 'v4';
 
 	/**
 	 *   Get current game information for the given summoner ID.
@@ -809,8 +809,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#league-v4
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_LEAGUE = '1424:league';
-	const RESOURCE_LEAGUE_VERSION = 'v4';
+	public const RESOURCE_LEAGUE = '1424:league';
+	public const RESOURCE_LEAGUE_VERSION = 'v4';
 
 	/**
 	 *   Get league by its UUID.
@@ -1002,8 +1002,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#league-exp-v4
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_LEAGUE_EXP = '1474:league-exp';
-	const RESOURCE_LEAGUE_EXP_VERSION = 'v4';
+	public const RESOURCE_LEAGUE_EXP = '1474:league-exp';
+	public const RESOURCE_LEAGUE_EXP_VERSION = 'v4';
 
 	/**
 	 *   Get all the league entries.
@@ -1047,7 +1047,7 @@ class LeagueAPI extends BaseAPI
 	 *     Static Data Endpoint Methods
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_STATICDATA = '1351:lol-static-data';
+	public const RESOURCE_STATICDATA = '1351:lol-static-data';
 
 	/**
 	 * @param $method
@@ -1097,8 +1097,8 @@ class LeagueAPI extends BaseAPI
      *     @link https://developer.riotgames.com/apis#account-v1
      * ==================================================================dd=
      **/
-    const RESOURCE_ACCOUNT = '1514:account';
-    const RESOURCE_ACCOUNT_VERSION = 'v1';
+    public const RESOURCE_ACCOUNT = '1514:account';
+    public const RESOURCE_ACCOUNT_VERSION = 'v1';
 
     /**
      *   Retrieve account by PUUID.
@@ -1609,8 +1609,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#lol-status-v4
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_STATUS = '1514:lol-status';
-	const RESOURCE_STATUS_VERSION = 'v4';
+	public const RESOURCE_STATUS = '1514:lol-status';
+	public const RESOURCE_STATUS_VERSION = 'v4';
 
 	/**
 	 *   Get status data - shard list.
@@ -1654,8 +1654,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#match-v5
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_MATCH = '1530:match';
-	const RESOURCE_MATCH_VERSION = 'v5';
+	public const RESOURCE_MATCH = '1530:match';
+	public const RESOURCE_MATCH_VERSION = 'v5';
 
 	/**
 	 *   Retrieve match IDs by a PUUID.
@@ -1779,8 +1779,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#summoner-v4
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_SUMMONER = '1416:summoner';
-	const RESOURCE_SUMMONER_VERSION = 'v4';
+	public const RESOURCE_SUMMONER = '1416:summoner';
+	public const RESOURCE_SUMMONER_VERSION = 'v4';
 
 	/**
 	 *   Get single summoner object for a given summoner ID.
@@ -1909,8 +1909,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#tournament-v4
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_TOURNAMENT = '1436:tournament';
-	const RESOURCE_TOURNAMENT_VERSION = 'v4';
+	public const RESOURCE_TOURNAMENT = '1436:tournament';
+	public const RESOURCE_TOURNAMENT_VERSION = 'v4';
 
 	/**
 	 *   Creates set of tournament codes for given tournament.
@@ -2182,8 +2182,8 @@ class LeagueAPI extends BaseAPI
 	 *     @link https://developer.riotgames.com/apis#tournament-stub-v4
 	 * ==================================================================dd=
 	 **/
-	const RESOURCE_TOURNAMENT_STUB = '1435:tournament-stub';
-	const RESOURCE_TOURNAMENT_STUB_VERSION = 'v4';
+	public const RESOURCE_TOURNAMENT_STUB = '1435:tournament-stub';
+	public const RESOURCE_TOURNAMENT_STUB_VERSION = 'v4';
 
 	/**
 	 *   Create a mock tournament code for the given tournament.
