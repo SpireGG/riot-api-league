@@ -115,6 +115,16 @@ class CurrentGameParticipant extends ApiObjectLinkable
     public $puuid;
 
     /**
+     * The encrypted riot ID of this participant.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *
+     * @var string $riotId
+     */
+    public string $riotId;
+
+    /**
      * The ID of the first summoner spell used by this participant.
      *
      * Available when received from:
