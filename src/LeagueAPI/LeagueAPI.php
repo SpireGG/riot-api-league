@@ -744,19 +744,19 @@ class LeagueAPI extends BaseAPI
     /**
      * ==================================================================dd=
      *     Spectator Endpoint Methods
-     * @link https://developer.riotgames.com/apis#spectator-v4
+     * @link https://developer.riotgames.com/apis#spectator-v5
      * ==================================================================dd=
      **/
     public const RESOURCE_SPECTATOR = '1419:spectator';
-    public const RESOURCE_SPECTATOR_VERSION = 'v4';
+    public const RESOURCE_SPECTATOR_VERSION = 'v5';
 
     /**
-     *   Get current game information for the given summoner ID.
+     *   Get current game information for the given summoner PUUID.
      *
      * @cli-name get-current-game-info
      * @cli-namespace spectator
      *
-     * @param string $encrypted_summoner_id
+     * @param string $encrypted_puuid
      *
      * @return Objects\CurrentGameInfo|null
      *
@@ -769,9 +769,9 @@ class LeagueAPI extends BaseAPI
      *
      * @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
      */
-    public function getCurrentGameInfoBySummoner(string $encrypted_summoner_id): ?Objects\CurrentGameInfo
+    public function getCurrentGameInfoBySummoner(string $encrypted_puuid): ?Objects\CurrentGameInfo
     {
-        $resultPromise = $this->setEndpoint("/lol/spectator/" . self::RESOURCE_SPECTATOR_VERSION . "/active-games/by-summoner/$encrypted_summoner_id")
+        $resultPromise = $this->setEndpoint("/lol/spectator/" . self::RESOURCE_SPECTATOR_VERSION . "/active-games/by-summoner/$encrypted_puuid")
             ->setResource(self::RESOURCE_SPECTATOR, "/active-games/by-summoner/%s")
             ->makeCall();
 
