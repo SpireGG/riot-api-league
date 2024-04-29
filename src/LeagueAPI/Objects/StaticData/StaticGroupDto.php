@@ -33,9 +33,9 @@ class StaticGroupDto extends ApiObject
     /** @var string $MaxGroupOwnable */
     public $MaxGroupOwnable;
 
-	/** @var string $key */
-	public $key;
+    /** @var string $key */
+    public $key;
 
-	/** @var string $id */
-	public $id;
+    /** @var string $id */
+    public $id;
 }

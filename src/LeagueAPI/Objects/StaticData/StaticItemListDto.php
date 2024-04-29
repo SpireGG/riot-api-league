@@ -47,6 +47,6 @@ class StaticItemListDto extends ApiObjectIterable
     /** @var string $type */
     public $type;
 
-	/** @var string $basic */
-	public $basic;
+    /** @var string $basic */
+    public $basic;
 }

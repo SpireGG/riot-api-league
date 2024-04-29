@@ -22,6 +22,7 @@ namespace RiotAPI\LeagueAPI\Objects;
 use ReflectionClass;
 use ReflectionException;
 use RiotAPI\Base\BaseAPI;
+use RiotAPI\Base\Exceptions\GeneralException;
 use RiotAPI\Base\Objects\ApiObject as BaseApiObject;
 use RiotAPI\LeagueAPI\LeagueAPI;
 
@@ -39,6 +40,7 @@ abstract class ApiObject extends BaseApiObject
      * @param array $data
      * @param BaseAPI|null $api
      * @throws ReflectionException
+     * @throws GeneralException
      */
     public function __construct(array $data, ?BaseAPI $api)
     {

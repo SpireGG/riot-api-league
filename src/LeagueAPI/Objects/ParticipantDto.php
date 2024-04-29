@@ -56,14 +56,14 @@ class ParticipantDto extends ApiObjectLinkable
      *
      * @var int $bountyLevel
      */
-	public int $bountyLevel;
+    public int $bountyLevel;
 
-	/**
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var array $challenges
-	 */
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var array $challenges
+     */
     public array $challenges = [];
 
     /**

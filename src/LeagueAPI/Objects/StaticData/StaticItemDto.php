@@ -93,9 +93,9 @@ class StaticItemDto extends ApiObject
     /** @var int $depth */
     public $depth;
 
-	/** @var int $stacks */
-	public $stacks;
+    /** @var int $stacks */
+    public $stacks;
 
-	/** @var string $requiredAlly */
-	public $requiredAlly;
+    /** @var string $requiredAlly */
+    public $requiredAlly;
 }

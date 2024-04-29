@@ -34,6 +34,7 @@ use RiotAPI\Base\Exceptions\SettingsException;
 use RiotAPI\DataDragonAPI\Exceptions as DataDragonExceptions;
 use RiotAPI\LeagueAPI\Objects\ProviderRegistrationParameters;
 use RiotAPI\LeagueAPI\Objects\StaticData;
+use RiotAPI\LeagueAPI\Objects\StaticData\StaticChampionDto;
 use RiotAPI\LeagueAPI\Objects\TournamentCodeParameters;
 use RiotAPI\LeagueAPI\Objects\TournamentCodeUpdateParameters;
 use RiotAPI\LeagueAPI\Objects\TournamentRegistrationParameters;
@@ -239,6 +240,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws SettingsException
+     * @throws ReflectionException
      */
     public function getChampionRotations(): ?Objects\ChampionInfo
     {
@@ -278,6 +280,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#champion-mastery-v4/GET_getChampionMastery
      */
@@ -308,6 +311,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#champion-mastery-v4/GET_getAllChampionMasteries
      */
@@ -379,6 +383,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getAllChallengeConfigs
      */
@@ -440,6 +445,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws SettingsException
+     * @throws ReflectionException
      * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getChallengeConfigs
      */
     public function getChallengeConfigById(int $challenge_id): ?Objects\ChallengeConfigInfoDto
@@ -466,6 +472,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getChallengeLeaderboards
      */
@@ -532,6 +539,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws SettingsException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#lol-challenges-v1/GET_getPlayerData
      */
@@ -571,6 +579,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#clash-v1/GET_getPlayersByPUUID
      */
@@ -604,6 +613,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#clash-v1/GET_getPlayersBySummoner
      */
@@ -637,6 +647,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#clash-v1/GET_getTeamById
      */
@@ -664,6 +675,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#clash-v1/GET_getTournaments
      */
@@ -697,6 +709,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#clash-v1/GET_getTournamentByTeam
      */
@@ -726,6 +739,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#clash-v1/GET_getTournamentById
      */
@@ -864,6 +878,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws SettingsException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueEntriesForSummoner
      */
@@ -900,6 +915,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws SettingsException
+     * @throws ReflectionException
      * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueEntries
      */
     public function getLeagueEntries(string $queue, string $tier, string $division, int $page = 1): ?array
@@ -1036,6 +1052,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws SettingsException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#league-exp-v4/GET_getLeagueEntries
      */
@@ -1120,6 +1137,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#account-v1/GET_getByPuuid
      */
@@ -1152,6 +1170,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#account-v1/GET_getByRiotId
      */
@@ -1184,6 +1203,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      * @throws ReflectionException
+     * @throws GeneralException
      */
     public function getStaticChampions(bool $data_by_key = false, string $locale = 'en_US', string $version = null): StaticData\StaticChampionListDto
     {
@@ -1202,7 +1222,9 @@ class LeagueAPI extends BaseAPI
      * @param string $locale
      * @param string|null $version
      *
-     * @return StaticData\StaticChampionDto
+     * @return StaticChampionDto
+     * @throws GeneralException
+     * @throws ReflectionException
      * @throws RequestException
      * @throws ServerException
      * @throws SettingsException
@@ -1239,6 +1261,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      * @throws ReflectionException
+     * @throws GeneralException
      */
     public function getStaticItems(string $locale = 'en_US', string $version = null): StaticData\StaticItemListDto
     {
@@ -1294,6 +1317,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      * @throws ReflectionException
+     * @throws GeneralException
      */
     public function getStaticLanguageStrings(string $locale = 'en_US', string $version = null): StaticData\StaticLanguageStringsDto
     {
@@ -1332,6 +1356,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      * @throws ReflectionException
+     * @throws GeneralException
      */
     public function getStaticMaps(string $locale = 'en_US', string $version = null): StaticData\StaticMapDataDto
     {
@@ -1353,6 +1378,7 @@ class LeagueAPI extends BaseAPI
      * @throws RequestException
      * @throws ServerException
      * @throws SettingsException
+     * @throws GeneralException
      */
     public function getStaticMasteries(string $locale = 'en_US', string $version = null): StaticData\StaticMasteryListDto
     {
@@ -1395,6 +1421,7 @@ class LeagueAPI extends BaseAPI
      * @throws RequestException
      * @throws ServerException
      * @throws SettingsException
+     * @throws GeneralException
      */
     public function getStaticProfileIcons(string $locale = 'en_US', string $version = null): StaticData\StaticProfileIconDataDto
     {
@@ -1432,6 +1459,7 @@ class LeagueAPI extends BaseAPI
      * @throws RequestException
      * @throws ServerException
      * @throws SettingsException|ReflectionException
+     * @throws GeneralException
      */
     public function getStaticReforgedRunePaths(string $locale = 'en_US', string $version = null): StaticData\StaticReforgedRunePathList
     {
@@ -1462,6 +1490,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      * @throws ReflectionException
+     * @throws GeneralException
      */
     public function getStaticReforgedRunes(string $locale = 'en_US', string $version = null): StaticData\StaticReforgedRuneList
     {
@@ -1497,6 +1526,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      * @throws ReflectionException
+     * @throws GeneralException
      */
     public function getStaticRunes(string $locale = 'en_US', string $version = null): StaticData\StaticRuneListDto
     {
@@ -1540,6 +1570,7 @@ class LeagueAPI extends BaseAPI
      * @throws RequestException
      * @throws ServerException
      * @throws SettingsException
+     * @throws GeneralException
      */
     public function getStaticSummonerSpells(bool $data_by_key = false, string $locale = 'en_US', string $version = null): StaticData\StaticSummonerSpellListDto
     {
@@ -1630,6 +1661,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#lol-status-v4/GET_getPlatformData
      */
@@ -1732,6 +1764,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
      */
@@ -1763,6 +1796,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#match-v5/GET_getTimeline
      */
@@ -1804,6 +1838,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerId
      */
@@ -1833,6 +1868,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerName
      */
@@ -1866,6 +1902,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#summoner-v4/GET_getByAccountId
      */
@@ -1895,6 +1932,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#summoner-v4/GET_getByPUUID
      */
@@ -2052,6 +2090,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws ServerLimitException
      * @throws GeneralException
+     * @throws ReflectionException
      *
      * @link https://developer.riotgames.com/apis#tournament-v4/GET_getTournamentCode
      */

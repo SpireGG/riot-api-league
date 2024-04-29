@@ -5,7 +5,7 @@
 	"keywords": ["riot", "league of legends", "api", "wrapper", "php8"],
 	"homepage": "https://github.com/spiregg/riot-api-league",
 	"license": "GPL-3.0-or-later",
-	"version": "2.2.5",
+	"version": "2.2.6",
 	"authors": [
 		{
 			"name": "Chypriote",
@@ -22,7 +22,7 @@
 		"test": "XDEBUG_MODE=coverage phpunit --configuration phpunit.xml --coverage-text --coverage-html build/coverage"
 	},
 	"require": {
-		"spiregg/riot-api-base": "^2.1",
+		"spiregg/riot-api-base": "^2.3",
 		"php": ">=8.1",
 		"ext-json": "*"
 	},

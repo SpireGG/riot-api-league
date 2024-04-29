@@ -78,9 +78,9 @@ class StaticChampionDto extends ApiObject
     /** @var string $blurb */
     public $blurb;
 
-	/** @var StaticChampionSpellDto[] $spells */
-	public $spells;
+    /** @var StaticChampionSpellDto[] $spells */
+    public $spells;
 
-	/** @var string $version */
-	public $version;
+    /** @var string $version */
+    public $version;
 }

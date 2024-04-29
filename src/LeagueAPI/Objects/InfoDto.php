@@ -32,16 +32,16 @@ namespace RiotAPI\LeagueAPI\Objects;
  */
 class InfoDto extends ApiObject
 {
-	/**
-	 * Unix timestamp for when the game is created on the game server (i.e.,
-	 * the loading screen).
-	 *
-	 * Available when received from:
-	 *   - @see LeagueAPI::getMatch
-	 *
-	 * @var string $gameCreation
-	 */
-	public string $endOfGameResult;
+    /**
+     * Unix timestamp for when the game is created on the game server (i.e.,
+     * the loading screen).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var string $gameCreation
+     */
+    public string $endOfGameResult;
 
     /**
      * Unix timestamp for when the game is created on the game server (i.e.,
