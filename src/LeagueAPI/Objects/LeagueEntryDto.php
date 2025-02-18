@@ -60,6 +60,18 @@ class LeagueEntryDto extends ApiObject
     public string $summonerId;
 
     /**
+     * Player's puuid (Encrypted).
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getLeagueEntries
+     *   - @see LeagueAPI::getLeagueEntriesForSummoner
+     *
+     * @var string $puuid
+     */
+    public string $puuid;
+
+    /**
      * Available when received from:
      *   - @see LeagueAPI::getLeagueEntries
      *   - @see LeagueAPI::getLeagueEntries
