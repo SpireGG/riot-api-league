@@ -864,12 +864,12 @@ class LeagueAPI extends BaseAPI
     }
 
     /**
-     *   Get league entries in all queues for a given summoner ID.
+     *   Get league entries in all queues for a given PUUID.
      *
-     * @cli-name get-league-entries-for-summoner
+     * @cli-name get-league-entries-for-puuid
      * @cli-namespace league
      *
-     * @param string $encrypted_summoner_id
+     * @param string $encrypted_puuid
      *
      * @return Objects\LeagueEntryDto[]|null
      *
@@ -880,12 +880,12 @@ class LeagueAPI extends BaseAPI
      * @throws SettingsException
      * @throws ReflectionException
      *
-     * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueEntriesForSummoner
+     * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueEntriesByPUUID
      */
-    public function getLeagueEntriesForSummoner(string $encrypted_summoner_id): ?array
+    public function getLeagueEntriesForPUUID(string $encrypted_puuid): ?array
     {
-        $resultPromise = $this->setEndpoint("/lol/league/" . self::RESOURCE_LEAGUE_VERSION . "/entries/by-summoner/$encrypted_summoner_id")
-            ->setResource(self::RESOURCE_LEAGUE, "/entries/by-summoner/%s")
+        $resultPromise = $this->setEndpoint("/lol/league/" . self::RESOURCE_LEAGUE_VERSION . "/entries/by-puuid/$encrypted_puuid")
+            ->setResource(self::RESOURCE_LEAGUE, "/entries/by-puuid/%s")
             ->makeCall();
 
         return $this->resolveOrEnqueuePromise($resultPromise, function (array $result) {
