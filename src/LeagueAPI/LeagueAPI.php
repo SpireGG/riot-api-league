@@ -1205,7 +1205,7 @@ class LeagueAPI extends BaseAPI
      * @throws ReflectionException
      * @throws GeneralException
      */
-    public function getStaticChampions(bool $data_by_key = false, string $locale = 'en_US', string $version = null): StaticData\StaticChampionListDto
+    public function getStaticChampions(bool $data_by_key = false, string $locale = 'en_US', ?string $version = null): StaticData\StaticChampionListDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticChampions", $locale, $version, $data_by_key);
         return new StaticData\StaticChampionListDto($result, $this);
@@ -1229,7 +1229,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      */
-    public function getStaticChampion(int $champion_id, bool $extended = false, string $locale = 'en_US', string $version = null): StaticData\StaticChampionDto
+    public function getStaticChampion(int $champion_id, bool $extended = false, string $locale = 'en_US', ?string $version = null): StaticData\StaticChampionDto
     {
         if ($champion_id === -1) {
             return new StaticData\StaticChampionDto(["id" => -1, "name" => "None"], $this);
@@ -1263,7 +1263,7 @@ class LeagueAPI extends BaseAPI
      * @throws ReflectionException
      * @throws GeneralException
      */
-    public function getStaticItems(string $locale = 'en_US', string $version = null): StaticData\StaticItemListDto
+    public function getStaticItems(string $locale = 'en_US', ?string $version = null): StaticData\StaticItemListDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticItems", $locale, $version);
 
@@ -1291,7 +1291,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      */
-    public function getStaticItem(int $item_id, string $locale = 'en_US', string $version = null): StaticData\StaticItemDto
+    public function getStaticItem(int $item_id, string $locale = 'en_US', ?string $version = null): StaticData\StaticItemDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticItem", $item_id, $locale, $version);
 
@@ -1319,7 +1319,7 @@ class LeagueAPI extends BaseAPI
      * @throws ReflectionException
      * @throws GeneralException
      */
-    public function getStaticLanguageStrings(string $locale = 'en_US', string $version = null): StaticData\StaticLanguageStringsDto
+    public function getStaticLanguageStrings(string $locale = 'en_US', ?string $version = null): StaticData\StaticLanguageStringsDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticLanguageStrings", $locale, $version);
         return new StaticData\StaticLanguageStringsDto($result, $this);
@@ -1358,7 +1358,7 @@ class LeagueAPI extends BaseAPI
      * @throws ReflectionException
      * @throws GeneralException
      */
-    public function getStaticMaps(string $locale = 'en_US', string $version = null): StaticData\StaticMapDataDto
+    public function getStaticMaps(string $locale = 'en_US', ?string $version = null): StaticData\StaticMapDataDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticMaps", $locale, $version);
         return new StaticData\StaticMapDataDto($result, $this);
@@ -1380,7 +1380,7 @@ class LeagueAPI extends BaseAPI
      * @throws SettingsException
      * @throws GeneralException
      */
-    public function getStaticMasteries(string $locale = 'en_US', string $version = null): StaticData\StaticMasteryListDto
+    public function getStaticMasteries(string $locale = 'en_US', ?string $version = null): StaticData\StaticMasteryListDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticMasteries", $locale, $version);
         return new StaticData\StaticMasteryListDto($result, $this);
@@ -1401,7 +1401,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      */
-    public function getStaticMastery(int $mastery_id, string $locale = 'en_US', string $version = null): StaticData\StaticMasteryDto
+    public function getStaticMastery(int $mastery_id, string $locale = 'en_US', ?string $version = null): StaticData\StaticMasteryDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticMastery", $mastery_id, $locale, $version);
         return new StaticData\StaticMasteryDto($result, $this);
@@ -1423,7 +1423,7 @@ class LeagueAPI extends BaseAPI
      * @throws SettingsException
      * @throws GeneralException
      */
-    public function getStaticProfileIcons(string $locale = 'en_US', string $version = null): StaticData\StaticProfileIconDataDto
+    public function getStaticProfileIcons(string $locale = 'en_US', ?string $version = null): StaticData\StaticProfileIconDataDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticProfileIcons", $locale, $version);
         return new StaticData\StaticProfileIconDataDto($result, $this);
@@ -1461,7 +1461,7 @@ class LeagueAPI extends BaseAPI
      * @throws SettingsException|ReflectionException
      * @throws GeneralException
      */
-    public function getStaticReforgedRunePaths(string $locale = 'en_US', string $version = null): StaticData\StaticReforgedRunePathList
+    public function getStaticReforgedRunePaths(string $locale = 'en_US', ?string $version = null): StaticData\StaticReforgedRunePathList
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticReforgedRunes", $locale, $version);
 
@@ -1492,7 +1492,7 @@ class LeagueAPI extends BaseAPI
      * @throws ReflectionException
      * @throws GeneralException
      */
-    public function getStaticReforgedRunes(string $locale = 'en_US', string $version = null): StaticData\StaticReforgedRuneList
+    public function getStaticReforgedRunes(string $locale = 'en_US', ?string $version = null): StaticData\StaticReforgedRuneList
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticReforgedRunes", $locale, $version);
 
@@ -1528,7 +1528,7 @@ class LeagueAPI extends BaseAPI
      * @throws ReflectionException
      * @throws GeneralException
      */
-    public function getStaticRunes(string $locale = 'en_US', string $version = null): StaticData\StaticRuneListDto
+    public function getStaticRunes(string $locale = 'en_US', ?string $version = null): StaticData\StaticRuneListDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticRunes", $locale, $version);
         return new StaticData\StaticRuneListDto($result, $this);
@@ -1549,7 +1549,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      */
-    public function getStaticRune(int $rune_id, string $locale = 'en_US', string $version = null): StaticData\StaticRuneDto
+    public function getStaticRune(int $rune_id, string $locale = 'en_US', ?string $version = null): StaticData\StaticRuneDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticRune", $rune_id, $locale, $version);
         return new StaticData\StaticRuneDto($result, $this);
@@ -1572,7 +1572,7 @@ class LeagueAPI extends BaseAPI
      * @throws SettingsException
      * @throws GeneralException
      */
-    public function getStaticSummonerSpells(bool $data_by_key = false, string $locale = 'en_US', string $version = null): StaticData\StaticSummonerSpellListDto
+    public function getStaticSummonerSpells(bool $data_by_key = false, string $locale = 'en_US', ?string $version = null): StaticData\StaticSummonerSpellListDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticSummonerSpells", $locale, $version, $data_by_key);
         return new StaticData\StaticSummonerSpellListDto($result, $this);
@@ -1593,7 +1593,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      */
-    public function getStaticSummonerSpell(int $summoner_spell_id, string $locale = 'en_US', string $version = null): StaticData\StaticSummonerSpellDto
+    public function getStaticSummonerSpell(int $summoner_spell_id, string $locale = 'en_US', ?string $version = null): StaticData\StaticSummonerSpellDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticSummonerSpellById", $summoner_spell_id, $locale, $version);
         return new StaticData\StaticSummonerSpellDto($result, $this);
@@ -1614,7 +1614,7 @@ class LeagueAPI extends BaseAPI
      * @throws ServerException
      * @throws SettingsException
      */
-    public function getStaticSummonerSpellByKey(string $summoner_spell_key, string $locale = 'en_US', string $version = null): StaticData\StaticSummonerSpellDto
+    public function getStaticSummonerSpellByKey(string $summoner_spell_key, string $locale = 'en_US', ?string $version = null): StaticData\StaticSummonerSpellDto
     {
         $result = $this->_makeStaticCall("RiotAPI\\DataDragonAPI\\DataDragonAPI::getStaticSummonerSpell", $summoner_spell_key, $locale, $version);
         return new StaticData\StaticSummonerSpellDto($result, $this);
@@ -1665,7 +1665,7 @@ class LeagueAPI extends BaseAPI
      *
      * @link https://developer.riotgames.com/apis#lol-status-v4/GET_getPlatformData
      */
-    public function getPlatformData(string $override_region = null): ?Objects\PlatformDataDto
+    public function getPlatformData(?string $override_region = null): ?Objects\PlatformDataDto
     {
         if ($override_region) {
             $this->setTemporaryRegion($override_region);
@@ -1718,7 +1718,7 @@ class LeagueAPI extends BaseAPI
      *
      * @link https://developer.riotgames.com/apis#match-v5/GET_getMatchIdsByPUUID
      */
-    public function getMatchIdsByPUUID(string $puuid, int $queue = null, string $type = null, int $start = null, int $count = null, int $startTime = null, int $endTime = null): ?array
+    public function getMatchIdsByPUUID(string $puuid, ?int $queue = null, ?string $type = null, ?int $start = null, ?int $count = null, ?int $startTime = null, ?int $endTime = null): ?array
     {
         if ($type && !in_array($type, self::MATCH_ALLOWED_TYPES)) {
             throw new RequestParameterException('Value of match type (type) is invalid. Allowed values: ' . implode(', ', self::MATCH_ALLOWED_TYPES));
@@ -2454,7 +2454,7 @@ class LeagueAPI extends BaseAPI
      * @internal
      *
      */
-    public function makeTestEndpointCall($specs, string $region = null, string $method = null): mixed
+    public function makeTestEndpointCall($specs, ?string $region = null, ?string $method = null): mixed
     {
         $resultPromise = $this->setEndpoint("/lol/test-endpoint/v0/$specs")
             ->setResource("v0", "/lol/test-endpoint/v0/%s")

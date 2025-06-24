@@ -5,7 +5,7 @@
 	"keywords": ["riot", "league of legends", "api", "wrapper", "php8"],
 	"homepage": "https://github.com/spiregg/riot-api-league",
 	"license": "GPL-3.0-or-later",
-	"version": "2.2.8",
+	"version": "2.3",
 	"authors": [
 		{
 			"name": "Chypriote",
