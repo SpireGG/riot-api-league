@@ -1,21 +1,6 @@
 <?php
 
-/**
- * Copyright (C) 2016-2023  Daniel Dolejška
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+declare(strict_types=1);
 
 namespace RiotAPI\LeagueAPI\Objects;
 
@@ -24,15 +9,19 @@ namespace RiotAPI\LeagueAPI\Objects;
  *   Class LeagueItemDto
  *
  * Used in:
- *   league (v4)
- *     - @see LeagueAPI::getChallengerLeague
+ *    league (v4)
+ *      - @see LeagueAPI::getLeagueEntriesForPUUID
+ * @link https://developer.riotgames.com/apis#league-exp-v4/GET_getLeagueEntriesByPUUID
+ *      - @see LeagueAPI::getLeagueEntries
+ * @link https://developer.riotgames.com/apis#league-exp-v4/GET_getLeagueEntries
+ *      - @see LeagueAPI::getChallengerLeague
  * @link https://developer.riotgames.com/apis#league-v4/GET_getChallengerLeague
- *     - @see LeagueAPI::getGrandmasterLeague
- * @link https://developer.riotgames.com/apis#league-v4/GET_getGrandmasterLeague
- *     - @see LeagueAPI::getLeagueById
- * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueById
- *     - @see LeagueAPI::getMasterLeague
+ *      - @see LeagueAPI::getMasterLeague
  * @link https://developer.riotgames.com/apis#league-v4/GET_getMasterLeague
+ *      - @see LeagueAPI::getGrandmasterLeague
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getGrandmasterLeague
+ *      - @see LeagueAPI::getLeagueById
+ * @link https://developer.riotgames.com/apis#league-v4/GET_getLeagueById
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
@@ -50,7 +39,7 @@ class LeagueItemDto extends ApiObject
     public bool $freshBlood;
 
     /**
-     * Winning team on Summoners Rift.
+     * Winning team on Summoner's Rift.
      *
      * Available when received from:
      *   - @see LeagueAPI::getChallengerLeague
@@ -153,7 +142,7 @@ class LeagueItemDto extends ApiObject
     public int $losses;
 
     /**
-     * Player's encrypted summonerId.
+     * Player's encrypted puuid.
      *
      * Available when received from:
      *   - @see LeagueAPI::getChallengerLeague
@@ -161,7 +150,7 @@ class LeagueItemDto extends ApiObject
      *   - @see LeagueAPI::getLeagueById
      *   - @see LeagueAPI::getMasterLeague
      *
-     * @var string $summonerId
+     * @var string $puuid
      */
-    public string $summonerId;
+    public string $puuid;
 }
