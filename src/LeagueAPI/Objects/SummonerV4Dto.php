@@ -24,34 +24,13 @@ namespace RiotAPI\LeagueAPI\Objects;
  *   Class SummonerDto
  *
  * Used in:
- *   summoner (v4)
- *     - @see LeagueAPI::getBySummonerId
- * @link https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerId
- *     - @see LeagueAPI::getByAccountId
- * @link https://developer.riotgames.com/apis#summoner-v4/GET_getByAccountId
- *     - @see LeagueAPI::getBySummonerName
- * @link https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerName
- *     - @see LeagueAPI::getByAccessToken
- * @link https://developer.riotgames.com/apis#summoner-v4/GET_getByAccessToken
+ *     - @see LeagueAPI::getByPUUID
+ * @link https://developer.riotgames.com/apis#summoner-v4/GET_getByPUUID
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
-class SummonerDto extends ApiObject
+class SummonerV4Dto extends ApiObject
 {
-    /**
-     * Encrypted account ID. Max length 56 characters.
-     *
-     * Available when received from:
-     *   - @see LeagueAPI::getBySummonerId
-     *   - @see LeagueAPI::getByPUUID
-     *   - @see LeagueAPI::getByAccountId
-     *   - @see LeagueAPI::getBySummonerName
-     *   - @see LeagueAPI::getByAccessToken
-     *
-     * @var string $accountId
-     */
-    public string $accountId;
-
     /**
      * ID of the summoner icon associated with the summoner.
      *
@@ -82,34 +61,6 @@ class SummonerDto extends ApiObject
      * @var int $revisionDate
      */
     public int $revisionDate;
-
-    /**
-     * Summoner name.
-     *
-     * Available when received from:
-     *   - @see LeagueAPI::getBySummonerId
-     *   - @see LeagueAPI::getByPUUID
-     *   - @see LeagueAPI::getByAccountId
-     *   - @see LeagueAPI::getBySummonerName
-     *   - @see LeagueAPI::getByAccessToken
-     *
-     * @var string $name
-     */
-    public string $name;
-
-    /**
-     * Encrypted summoner ID. Max length 63 characters.
-     *
-     * Available when received from:
-     *   - @see LeagueAPI::getBySummonerId
-     *   - @see LeagueAPI::getByPUUID
-     *   - @see LeagueAPI::getByAccountId
-     *   - @see LeagueAPI::getBySummonerName
-     *   - @see LeagueAPI::getByAccessToken
-     *
-     * @var string $id
-     */
-    public string $id;
 
     /**
      * Encrypted PUUID. Exact length of 78 characters.

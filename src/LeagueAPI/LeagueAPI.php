@@ -1188,6 +1188,36 @@ class LeagueAPI extends BaseAPI
     }
 
     /**
+     * Get account by access token
+     *
+     * @cli-name get-me
+     * @cli-namespace account
+     *
+     * @return Objects\AccountDto|null
+     *
+     * @throws SettingsException
+     * @throws RequestException
+     * @throws ServerException
+     * @throws ServerLimitException
+     * @throws GeneralException
+     * @throws ReflectionException
+     *
+     * @link https://developer.riotgames.com/apis#account-v1/GET_getByAccessToken
+     */
+    public function getAccountMe(): ?Objects\AccountDto
+    {
+        $continent_region = $this->platforms->getCorrespondingContinentRegion($this->getSetting(self::SET_REGION));
+
+        $resultPromise = $this->setEndpoint("/riot/account/v1/me")
+            ->setResource(self::RESOURCE_ACCOUNT, "/account/me")
+            ->makeCall($continent_region);
+
+        return $this->resolveOrEnqueuePromise($resultPromise, function (array $result) {
+            return new Objects\AccountDto($result, $this);
+        });
+    }
+
+    /**
      *   Retrieves champion list.
      *
      * @cli-name get-champions
@@ -1824,14 +1854,14 @@ class LeagueAPI extends BaseAPI
     public const RESOURCE_SUMMONER_VERSION = 'v4';
 
     /**
-     *   Get single summoner object for a given summoner ID.
+     * Get a summoner by its RSO encrypted PUUID.
      *
-     * @cli-name get
+     * @cli-name get-by-rso-puuid
      * @cli-namespace summoner
      *
-     * @param string $encrypted_summoner_id
+     * @param string $rso_puuid
      *
-     * @return Objects\SummonerDto|null
+     * @return Objects\SummonerV4Dto|null
      *
      * @throws SettingsException
      * @throws RequestException
@@ -1842,78 +1872,14 @@ class LeagueAPI extends BaseAPI
      *
      * @link https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerId
      */
-    public function getSummoner(string $encrypted_summoner_id): ?Objects\SummonerDto
+    public function getSummonerByRSOPUUID(string $rso_puuid): ?Objects\SummonerV4Dto
     {
-        $resultPromise = $this->setEndpoint("/lol/summoner/" . self::RESOURCE_SUMMONER_VERSION . "/summoners/$encrypted_summoner_id")
+        $resultPromise = $this->setEndpoint("/fullfilment/v1/summoners/by-puuid/$rso_puuid")
             ->setResource(self::RESOURCE_SUMMONER, "/summoners/%s")
             ->makeCall();
 
         return $this->resolveOrEnqueuePromise($resultPromise, function (array $result) {
-            return new Objects\SummonerDto($result, $this);
-        });
-    }
-
-    /**
-     *   Get summoner for a given summoner name.
-     *
-     * @cli-name get-by-name
-     * @cli-namespace summoner
-     *
-     * @param string $summoner_name
-     *
-     * @return Objects\SummonerDto|null
-     *
-     * @throws SettingsException
-     * @throws RequestException
-     * @throws ServerException
-     * @throws ServerLimitException
-     * @throws GeneralException
-     * @throws ReflectionException
-     *
-     * @link https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerName
-     */
-    public function getSummonerByName(string $summoner_name): ?Objects\SummonerDto
-    {
-        if (trim($summoner_name) === '') {
-            throw new RequestParameterException('Provided summoner name must not be empty');
-        }
-
-        $resultPromise = $this->setEndpoint("/lol/summoner/" . self::RESOURCE_SUMMONER_VERSION . "/summoners/by-name/$summoner_name")
-            ->setResource(self::RESOURCE_SUMMONER, "/summoners/by-name/%s")
-            ->makeCall();
-
-        return $this->resolveOrEnqueuePromise($resultPromise, function (array $result) {
-            return new Objects\SummonerDto($result, $this);
-        });
-    }
-
-    /**
-     *   Get single summoner object for a given summoner's account ID.
-     *
-     * @cli-name get-by-account-id
-     * @cli-namespace summoner
-     *
-     * @param string $encrypted_account_id
-     *
-     * @return Objects\SummonerDto|null
-     *
-     * @throws SettingsException
-     * @throws RequestException
-     * @throws ServerException
-     * @throws ServerLimitException
-     * @throws GeneralException
-     * @throws ReflectionException
-     *
-     * @link https://developer.riotgames.com/apis#summoner-v4/GET_getByAccountId
-     */
-    public function getSummonerByAccountId(string $encrypted_account_id): ?Objects\SummonerDto
-    {
-        $resultPromise = $this->setEndpoint("/lol/summoner/" . self::RESOURCE_SUMMONER_VERSION . "/summoners/by-account/$encrypted_account_id")
-            ->setResource(self::RESOURCE_SUMMONER, "/summoners/by-account/%s")
-            ->makeCall();
-
-        return $this->resolveOrEnqueuePromise($resultPromise, function (array $result) {
-            return new Objects\SummonerDto($result, $this);
+            return new Objects\SummonerV4Dto($result, $this);
         });
     }
 
@@ -1925,7 +1891,7 @@ class LeagueAPI extends BaseAPI
      *
      * @param string $encrypted_puuid
      *
-     * @return Objects\SummonerDto|null
+     * @return Objects\SummonerV4Dto|null
      *
      * @throws SettingsException
      * @throws RequestException
@@ -1936,14 +1902,42 @@ class LeagueAPI extends BaseAPI
      *
      * @link https://developer.riotgames.com/apis#summoner-v4/GET_getByPUUID
      */
-    public function getSummonerByPUUID(string $encrypted_puuid): ?Objects\SummonerDto
+    public function getSummonerByPUUID(string $encrypted_puuid): ?Objects\SummonerV4Dto
     {
         $resultPromise = $this->setEndpoint("/lol/summoner/" . self::RESOURCE_SUMMONER_VERSION . "/summoners/by-puuid/$encrypted_puuid")
             ->setResource(self::RESOURCE_SUMMONER, "/summoners/by-puuid/%s")
             ->makeCall();
 
         return $this->resolveOrEnqueuePromise($resultPromise, function (array $result) {
-            return new Objects\SummonerDto($result, $this);
+            return new Objects\SummonerV4Dto($result, $this);
+        });
+    }
+
+    /**
+     * Get a summoner by access token.
+     *
+     * @cli-name get-me
+     * @cli-namespace summoner
+     *
+     * @return Objects\SummonerV4Dto|null
+     *
+     * @throws SettingsException
+     * @throws RequestException
+     * @throws ServerException
+     * @throws ServerLimitException
+     * @throws GeneralException
+     * @throws ReflectionException
+     *
+     * @link https://developer.riotgames.com/apis#summoner-v4/GET_getByPUUID
+     */
+    public function getSummonerMe(): ?Objects\SummonerV4Dto
+    {
+        $resultPromise = $this->setEndpoint("/lol/summoner/" . self::RESOURCE_SUMMONER_VERSION . "/summoners/me")
+            ->setResource(self::RESOURCE_SUMMONER, "/summoners/me")
+            ->makeCall();
+
+        return $this->resolveOrEnqueuePromise($resultPromise, function (array $result) {
+            return new Objects\SummonerV4Dto($result, $this);
         });
     }
 
