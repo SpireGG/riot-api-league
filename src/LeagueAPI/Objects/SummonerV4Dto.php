@@ -62,6 +62,20 @@ class SummonerV4Dto extends ApiObject
     public string $puuid;
 
     /**
+     * Encrypted ID
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getBySummonerId
+     *   - @see LeagueAPI::getByPUUID
+     *   - @see LeagueAPI::getByAccountId
+     *   - @see LeagueAPI::getBySummonerName
+     *   - @see LeagueAPI::getByAccessToken
+     *
+     * @var string|null $id
+     */
+    public ?string $id;
+
+    /**
      * Summoner level associated with the summoner.
      *
      * Available when received from:
