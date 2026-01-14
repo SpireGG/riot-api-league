@@ -153,4 +153,14 @@ class CurrentGameParticipant extends ApiObjectLinkable
      * @var GameCustomizationObject[] $gameCustomizationObjects
      */
     public array $gameCustomizationObjects;
+
+    /**
+     * The ID of the second summoner spell used by this participant.
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getCurrentGameInfoBySummoner
+     *
+     * @var int $spell2Id
+     */
+    public int $lastSelectedSkinIndex;
 }
